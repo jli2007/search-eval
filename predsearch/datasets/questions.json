@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US Presidential Election?",
+    "resolution": true,
+    "resolution_date": "2024-11-06",
+    "category": "policy",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/presidential-election-winner-2024"
+  },
+  {
+    "id": "pm_002",
+    "question": "Will Biden be the 2024 Democratic Nominee?",
+    "resolution": false,
+    "resolution_date": "2024-07-21",
+    "category": "policy",
+    "source": "manifold",
+    "source_url": "https://manifold.markets/NathanpmYoung/will-biden-be-the-2024-democratic-n"
+  },
+  {
+    "id": "pm_003",
+    "question": "Will China invade Taiwan in 2024?",
+    "resolution": false,
+    "resolution_date": "2024-12-31",
+    "category": "geopolitics",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/will-china-invade-taiwan-in-2024"
+  },
+  {
+    "id": "pm_004",
+    "question": "Bilateral Ceasefire in Ukraine before 2024?",
+    "resolution": false,
+    "resolution_date": "2023-12-31",
+    "category": "geopolitics",
+    "source": "metaculus",
+    "source_url": "https://www.metaculus.com/questions/13985/bilateral-ceasefire-in-ukraine-before-2024/"
+  },
+  {
+    "id": "pm_005",
+    "question": "Bitcoin ETF approved by Jan 15?",
+    "resolution": true,
+    "resolution_date": "2024-01-10",
+    "category": "crypto",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/bitcoin-etf-approved-by-jan-15"
+  },
+  {
+    "id": "pm_006",
+    "question": "Bitcoin new all time high in 2024?",
+    "resolution": true,
+    "resolution_date": "2024-12-31",
+    "category": "crypto",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/bitcoin-new-all-time-high-in-2024"
+  },
+  {
+    "id": "pm_007",
+    "question": "Fed decreases interest rates by 50 bps after September 2024 meeting",
+    "resolution": true,
+    "resolution_date": "2024-09-18",
+    "category": "economics",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/fed-interest-rates-september-2024"
+  },
+  {
+    "id": "pm_008",
+    "question": "ChatGPT uses GPT-4 for free users?",
+    "resolution": true,
+    "resolution_date": "2024-05-13",
+    "category": "tech",
+    "source": "metaculus",
+    "source_url": "https://www.metaculus.com/questions/15463/chatgpt-uses-gpt-4-for-free-users/"
+  },
+  {
+    "id": "pm_009",
+    "question": "Successful Moon Landings in Early 2024?",
+    "resolution": true,
+    "resolution_date": "2024-02-24",
+    "category": "science",
+    "source": "metaculus",
+    "source_url": "https://www.metaculus.com/questions/20919/successful-moon-landings-in-early-2024/"
+  },
+  {
+    "id": "pm_010",
+    "question": "Supreme Court vacancy in 2024?",
+    "resolution": false,
+    "resolution_date": "2024-12-31",
+    "category": "policy",
+    "source": "polymarket",
+    "source_url": "https://polymarket.com/event/supreme-court-vacancy-in-2024"
+  }
+]
