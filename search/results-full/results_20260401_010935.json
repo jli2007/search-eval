@@ -1,0 +1,2916 @@
+{
+  "summary": [
+    {
+      "provider": "none",
+      "mode": "no_search",
+      "n": 33,
+      "mean_brier": 0.2719,
+      "brier_ci_95": [
+        0.2208,
+        0.3245
+      ],
+      "mean_log_loss": 0.7408,
+      "ece": 0.144,
+      "brier_by_category": {
+        "politics": 0.3379,
+        "geopolitics": 0.1705,
+        "crypto": 0.3175,
+        "economics": 0.2994,
+        "tech": 0.2662,
+        "science": 0.3692,
+        "sports": 0.1858
+      },
+      "cost": {
+        "total_queries": 0,
+        "total_results": 0,
+        "avg_queries_per_question": 0.0,
+        "avg_results_per_question": 0.0,
+        "n": 33
+      }
+    },
+    {
+      "provider": "exa",
+      "mode": "single",
+      "n": 33,
+      "mean_brier": 0.219,
+      "brier_ci_95": [
+        0.1373,
+        0.3058
+      ],
+      "mean_log_loss": 0.6431,
+      "ece": 0.0971,
+      "brier_by_category": {
+        "politics": 0.355,
+        "geopolitics": 0.2185,
+        "crypto": 0.3275,
+        "economics": 0.1975,
+        "tech": 0.0225,
+        "science": 0.0484,
+        "sports": 0.2192
+      },
+      "cost": {
+        "total_queries": 33,
+        "total_results": 152,
+        "avg_queries_per_question": 1.0,
+        "avg_results_per_question": 4.6,
+        "n": 33
+      },
+      "uplift_vs_baseline_pct": 19.4,
+      "p_value": 0.1312,
+      "confidence_weighted": {
+        "uncertain": {
+          "provider_brier": 0.2306,
+          "baseline_brier": 0.2736,
+          "uplift_pct": 15.7,
+          "n": 28
+        },
+        "confident": {
+          "provider_brier": 0.154,
+          "baseline_brier": 0.2625,
+          "uplift_pct": 41.3,
+          "n": 5
+        }
+      }
+    },
+    {
+      "provider": "exa",
+      "mode": "agentic",
+      "n": 33,
+      "mean_brier": 0.2062,
+      "brier_ci_95": [
+        0.1385,
+        0.2832
+      ],
+      "mean_log_loss": 0.61,
+      "ece": 0.134,
+      "brier_by_category": {
+        "politics": 0.2996,
+        "geopolitics": 0.2105,
+        "crypto": 0.1594,
+        "economics": 0.1744,
+        "tech": 0.0375,
+        "science": 0.2892,
+        "sports": 0.2171
+      },
+      "cost": {
+        "total_queries": 99,
+        "total_results": 449,
+        "avg_queries_per_question": 3.0,
+        "avg_results_per_question": 13.6,
+        "n": 33
+      },
+      "uplift_vs_baseline_pct": 24.2,
+      "p_value": 0.0694,
+      "confidence_weighted": {
+        "uncertain": {
+          "provider_brier": 0.2262,
+          "baseline_brier": 0.2736,
+          "uplift_pct": 17.3,
+          "n": 28
+        },
+        "confident": {
+          "provider_brier": 0.0945,
+          "baseline_brier": 0.2625,
+          "uplift_pct": 64.0,
+          "n": 5
+        }
+      }
+    },
+    {
+      "provider": "tavily",
+      "mode": "single",
+      "n": 33,
+      "mean_brier": 0.2628,
+      "brier_ci_95": [
+        0.2131,
+        0.3142
+      ],
+      "mean_log_loss": 0.7212,
+      "ece": 0.144,
+      "brier_by_category": {
+        "politics": 0.3218,
+        "geopolitics": 0.1705,
+        "crypto": 0.3625,
+        "economics": 0.2994,
+        "tech": 0.1744,
+        "science": 0.3692,
+        "sports": 0.1858
+      },
+      "cost": {
+        "total_queries": 33,
+        "total_results": 0,
+        "avg_queries_per_question": 1.0,
+        "avg_results_per_question": 0.0,
+        "n": 33
+      },
+      "uplift_vs_baseline_pct": 3.3,
+      "p_value": 0.3735,
+      "confidence_weighted": {
+        "uncertain": {
+          "provider_brier": 0.2629,
+          "baseline_brier": 0.2736,
+          "uplift_pct": 3.9,
+          "n": 28
+        },
+        "confident": {
+          "provider_brier": 0.2625,
+          "baseline_brier": 0.2625,
+          "uplift_pct": 0.0,
+          "n": 5
+        }
+      }
+    },
+    {
+      "provider": "tavily",
+      "mode": "agentic",
+      "n": 33,
+      "mean_brier": 0.2662,
+      "brier_ci_95": [
+        0.2175,
+        0.3171
+      ],
+      "mean_log_loss": 0.7285,
+      "ece": 0.1397,
+      "brier_by_category": {
+        "politics": 0.3379,
+        "geopolitics": 0.1705,
+        "crypto": 0.3625,
+        "economics": 0.2994,
+        "tech": 0.1744,
+        "science": 0.3692,
+        "sports": 0.1858
+      },
+      "cost": {
+        "total_queries": 99,
+        "total_results": 0,
+        "avg_queries_per_question": 3.0,
+        "avg_results_per_question": 0.0,
+        "n": 33
+      },
+      "uplift_vs_baseline_pct": 2.1,
+      "p_value": 0.4948,
+      "confidence_weighted": {
+        "uncertain": {
+          "provider_brier": 0.2669,
+          "baseline_brier": 0.2736,
+          "uplift_pct": 2.4,
+          "n": 28
+        },
+        "confident": {
+          "provider_brier": 0.2625,
+          "baseline_brier": 0.2625,
+          "uplift_pct": 0.0,
+          "n": 5
+        }
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "pm_001",
+      "question": "Will Donald Trump win the 2024 US presidential election?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of October 2024, Donald Trump has a strong base of support within the Republican Party and has been a prominent figure in American politics. However, he faces significant challenges, including legal issues and potential opposition from both within his party and from the Democratic candidate. Polling data shows a competitive race, with various factors such as voter turnout, swing states, and the political landscape influencing the outcome. Given these dynamics, a probability of 0.45 reflects a reasonable chance of him winning, acknowledging both his strengths and the uncertainties in the election.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_002",
+      "question": "Will Joe Biden be the 2024 Democratic nominee?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of July 2024, Joe Biden is the incumbent president and has a strong advantage in the Democratic primary due to his established position and support within the party. While there are potential challengers, such as Marianne Williamson and Robert F. Kennedy Jr., Biden's incumbency and the general trend of parties rallying around their sitting president suggest a high likelihood of him securing the nomination. However, there is still some uncertainty due to potential shifts in voter sentiment and unforeseen events, which is why the probability is not higher.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_003",
+      "question": "Will Joe Biden pardon Hunter Biden?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of November 2024, Hunter Biden is facing legal challenges, and while there has been speculation about a potential pardon from his father, President Joe Biden, the political implications and the ongoing investigations make it a complex decision. Historically, pardons can be politically sensitive, especially in high-profile cases. Given the divided political climate and the potential backlash, it seems less likely that a pardon would be granted, but it is not out of the realm of possibility, hence a moderate probability.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_004",
+      "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 2024, Donald Trump is facing multiple legal challenges, including several criminal trials. The outcomes of such trials can be influenced by various factors, including the strength of the evidence, the legal strategies employed, and the political context. Given the polarized nature of the legal and political landscape surrounding Trump, while there is a significant chance of conviction, there are also substantial defenses and public support that could mitigate this outcome. Therefore, a probability of 45% reflects a balanced view of the uncertainty involved.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_005",
+      "question": "Will the US Supreme Court uphold the TikTok ban?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2025, the legal landscape surrounding the TikTok ban has been contentious, with various arguments regarding national security and free speech. The Supreme Court's decision will likely depend on interpretations of these issues, as well as the political climate and public opinion surrounding TikTok. Given the divided nature of the court and the ongoing debates, there is a significant chance that the court could uphold the ban, but also a substantial chance that they could rule against it, leading to a probability of around 45%.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_006",
+      "question": "Will the Republicans win control of the US Senate in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.55,
+      "brier_score": 0.20249999999999996,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of October 2024, the political landscape indicates a competitive environment for the upcoming Senate elections. Historical trends suggest that the party not holding the presidency often gains seats in midterm elections, but the dynamics can vary significantly based on specific races and candidate popularity. The Republicans have a solid chance of winning control, especially if they can capitalize on any dissatisfaction with the current administration. However, the Democrats also have strong incumbents and key issues that could mobilize their base. Given these factors, a slight edge for Republicans seems plausible, hence a probability of 55%.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_007",
+      "question": "Will there be a US Supreme Court vacancy in 2024?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of December 2024, there are no confirmed vacancies on the US Supreme Court, and the current justices are relatively young and healthy. However, the possibility of a vacancy cannot be ruled out entirely, as justices may retire or pass away unexpectedly. Given the historical context of Supreme Court vacancies and the current composition of the court, I estimate a moderate probability of 45% for a vacancy occurring in 2024.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_008",
+      "question": "Will Sweden join NATO in 2024?",
+      "category": "geopolitics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of February 2024, Sweden has expressed strong interest in joining NATO, particularly in light of security concerns stemming from regional tensions, especially with Russia. The Swedish government has taken significant steps towards membership, including applying formally and engaging in discussions with NATO member states. However, the process requires unanimous approval from existing NATO members, and there are still some political dynamics and negotiations that could affect the timeline. Given the current momentum and support for NATO membership in Sweden, I estimate a 75% probability that Sweden will join NATO in 2024.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_009",
+      "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the conflict between Russia and Ukraine remains highly complex and influenced by various geopolitical factors. While there have been ongoing discussions and attempts at negotiations, significant obstacles such as territorial disputes, military engagements, and differing political objectives persist. The likelihood of a ceasefire agreement by the end of 2024 is hindered by these factors, leading to a moderate probability of 35% that a ceasefire will be reached.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_010",
+      "question": "Will China take military action against Taiwan in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, tensions between China and Taiwan remain high, with China continuing to assert its claims over Taiwan. However, there are significant deterrents to military action, including potential international backlash, economic repercussions, and the military capabilities of Taiwan and its allies. While the risk of military action cannot be dismissed, especially given the historical context and ongoing military exercises, the probability of an outright invasion in 2024 is moderated by these factors.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_011",
+      "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the situation between Israel and Hamas remains highly complex and fraught with historical tensions. While there have been periods of temporary ceasefires, the underlying issues such as territorial disputes, security concerns, and political dynamics make a permanent ceasefire challenging to achieve. Diplomatic efforts may be ongoing, but the lack of trust and the potential for renewed violence suggest that a permanent resolution by the end of 2024 is unlikely. Therefore, I estimate a 35% probability that a permanent ceasefire will be reached.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_012",
+      "question": "Will North Korea conduct a nuclear test in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "North Korea has a history of conducting nuclear tests, particularly in response to international sanctions and military exercises by the United States and its allies. As of late 2023, tensions in the region remain high, and North Korea has indicated a willingness to advance its nuclear capabilities. Given these factors, there is a significant likelihood that North Korea may conduct a nuclear test in 2024, but the exact timing and decision-making can be unpredictable, leading to a probability estimate of 0.65.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_013",
+      "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of December 2023, several Bitcoin spot ETF applications are under review by the SEC, and there has been ongoing debate about regulatory concerns and market stability. While there is significant interest and pressure for approval, the SEC has historically been cautious regarding cryptocurrency products. Given the mixed signals from regulators and the potential for further delays, I estimate a moderate probability of 45% for approval by January 15, 2024.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_014",
+      "question": "Will Bitcoin reach $100,000 by end of 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of November 2024, Bitcoin has shown significant volatility and has experienced both rapid increases and sharp declines in value. While there is a strong interest in Bitcoin and cryptocurrency markets, reaching $100,000 by the end of 2024 would require substantial market momentum and investor confidence. Factors such as regulatory developments, macroeconomic conditions, and technological advancements in the blockchain space could influence this outcome. Given the historical trends and current market sentiment, a probability of 35% reflects a cautious optimism about Bitcoin reaching this milestone.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_015",
+      "question": "Will an Ethereum spot ETF be approved in 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of May 2024, there has been increasing interest and momentum for cryptocurrency-related financial products, including spot ETFs. Several applications for Ethereum spot ETFs have been submitted to regulatory bodies, and there is a growing acceptance of cryptocurrencies in traditional finance. However, regulatory hurdles and concerns about market manipulation and investor protection still exist. Given the current trends and the potential for regulatory approval, I estimate a 65% probability that an Ethereum spot ETF will be approved in 2024.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_016",
+      "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?",
+      "category": "crypto",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, Bitcoin's price has shown significant volatility, influenced by various factors such as regulatory developments, macroeconomic conditions, and market sentiment. Given the historical patterns of Bitcoin's price fluctuations and the potential for adverse market conditions, there is a reasonable chance that Bitcoin could drop below $20,000 at some point in 2024. While there are also bullish trends and institutional interest that could support higher prices, the uncertainty in the crypto market leads me to estimate a 65% probability for a drop below this threshold.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_017",
+      "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of September 2024, the Federal Reserve's monetary policy is influenced by various economic indicators such as inflation, employment rates, and overall economic growth. Given that inflation rates have been a concern and the Fed has been cautious about making significant cuts to interest rates, a 50 basis point cut seems less likely. However, if economic conditions deteriorate or if there is a significant downturn, the Fed may consider a larger cut. Therefore, while there is a possibility of a 50 basis point cut, it is not the most probable outcome, leading to a 30% probability estimation.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_018",
+      "question": "Will the Federal Reserve cut interest rates before July 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of mid-June 2024, the Federal Reserve has maintained a cautious approach to interest rate adjustments, primarily due to ongoing inflation concerns and economic indicators suggesting a mixed outlook. While there is speculation about potential rate cuts, particularly if inflation shows signs of easing significantly or if economic growth slows, the Fed's recent statements indicate a preference for maintaining rates to ensure stability. Therefore, while there is a reasonable chance of a rate cut before July 2024, it is not highly likely given the current economic context.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_019",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2024, the S&P 500 has shown volatility and uncertainty due to various economic factors, including inflation rates, interest rate changes, and geopolitical tensions. While there is potential for growth, reaching a closing level above 5,000 would require significant positive market sentiment and economic conditions. Given the current trends and uncertainties, a probability of 45% reflects a cautious optimism without overestimating the likelihood of such a high closing level.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_020",
+      "question": "Will the US economy enter a recession in 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of December 2024, various economic indicators suggest a mixed outlook for the US economy. While inflation has been a concern, the Federal Reserve's actions to manage interest rates have had varying effects on growth. Some sectors show resilience, but others are facing challenges, such as supply chain issues and consumer spending fluctuations. Given these factors, there is a significant chance of a recession occurring, but it is not guaranteed, leading to a probability of 45%.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_021",
+      "question": "Will OpenAI release GPT-5 by end of 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, OpenAI has a history of releasing new models and updates to their AI systems, with GPT-4 being released in March 2023. Given the rapid advancements in AI and the competitive landscape, it is plausible that OpenAI would aim to release GPT-5 by the end of 2024. However, there are also factors such as the need for thorough testing, ethical considerations, and potential regulatory hurdles that could delay the release. Therefore, while there is a reasonable chance of a release, uncertainties remain, leading to a probability of 0.65.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_022",
+      "question": "Will Apple release the Vision Pro in Q1 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of January 2024, Apple has announced the Vision Pro and indicated a release timeframe for early 2024. Given Apple's history of meeting product launch timelines and the significant anticipation surrounding the Vision Pro, it is reasonable to estimate a high probability that the product will be released in Q1 2024. However, there is always a possibility of delays in technology launches, which is why the probability is not at the maximum.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_023",
+      "question": "Will Neuralink implant a brain chip in a human in 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of January 2024, Neuralink has made significant progress in developing brain-computer interface technology, but they have faced regulatory hurdles and safety concerns regarding human trials. While they have expressed intentions to begin human trials, the timeline remains uncertain. Given these factors, there is a reasonable chance that they could implant a brain chip in a human in 2024, but it is not guaranteed, leading to a probability of 30%.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_024",
+      "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "As of December 2024, Tesla has made significant progress in developing its Full Self-Driving (FSD) technology, but there are still regulatory, technical, and safety challenges that need to be addressed before a fully autonomous robotaxi can be launched commercially. While Tesla has ambitious plans and has been testing its FSD capabilities, the timeline for regulatory approval and widespread deployment remains uncertain. Therefore, while there is a possibility that Tesla could introduce a robotaxi in 2024, the likelihood is tempered by these ongoing challenges.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_025",
+      "question": "Will NASA's Artemis II mission launch in 2024?",
+      "category": "science",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of December 2024, NASA's Artemis II mission is planned to be the first crewed flight of the Orion spacecraft, and it is intended to follow the successful Artemis I uncrewed mission. Given the progress made in 2023 and 2024, including successful testing and preparations, there is a strong likelihood that the mission will launch as scheduled. However, potential delays due to technical challenges or funding issues cannot be entirely ruled out, which is why the probability is not higher.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_026",
+      "question": "Will there be a successful commercial Moon landing in early 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of February 2024, several private companies have been actively working on lunar lander technology, and there have been significant advancements in commercial spaceflight. However, the timeline for successful lunar missions has historically been optimistic, with delays often occurring. While there are plans for commercial Moon landings, the complexity and risks involved in such missions suggest that achieving a successful landing in early 2024 is uncertain. Therefore, a probability of 35% reflects a cautious optimism based on current capabilities and timelines.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_027",
+      "question": "Will Boeing Starliner complete a crewed launch in 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of May 2024, Boeing has made significant progress with the Starliner program, including successful uncrewed test flights. However, there have been delays and technical challenges in the past, which could impact the timeline for a crewed launch. Given the current trajectory and the urgency for NASA to have a reliable crew transport system, there is a reasonable chance that Boeing will complete a crewed launch in 2024, but uncertainties remain. Therefore, I estimate the probability at 65%.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_028",
+      "question": "Will the Kansas City Chiefs win Super Bowl LVIII?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Kansas City Chiefs have been a strong team in recent seasons, including winning Super Bowl LVII. They have a talented roster led by a top quarterback, Patrick Mahomes, and a solid coaching staff. As of January 2024, they are considered one of the favorites to win Super Bowl LVIII. However, the NFL is unpredictable, and other strong teams could pose a challenge, which is why the probability is not higher.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_029",
+      "question": "Will the Boston Celtics win the 2024 NBA Championship?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "The Boston Celtics have a strong roster and have been competitive in recent seasons, making them a contender for the NBA Championship. However, the outcome is uncertain due to the presence of other strong teams in the league, such as the Milwaukee Bucks and the Denver Nuggets, who also have championship aspirations. The Celtics' performance in the playoffs and any potential injuries or trades leading up to the finals will significantly impact their chances. Therefore, while they have a solid chance, it is not guaranteed.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_030",
+      "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Caitlin Clark has been a standout player in college basketball, known for her scoring ability and playmaking skills. As of April 2024, she is widely regarded as one of the top prospects for the WNBA Draft. While there are other talented players in the draft, Clark's performance in the NCAA tournament and her overall skill set make her a strong candidate for the #1 pick. However, the final decision will depend on team needs and preferences, which introduces some uncertainty.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_031",
+      "question": "Will the Los Angeles Dodgers win the 2024 World Series?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Los Angeles Dodgers have consistently been one of the top teams in Major League Baseball, with a strong roster and solid management. As of October 2024, they have performed well throughout the regular season and have a good chance of making a deep playoff run. Their recent playoff experiences and strong player performances suggest they are likely contenders for the World Series title. However, the unpredictability of the playoffs and the presence of other strong teams in the league slightly lowers the probability of them winning.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_032",
+      "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.55,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177717,
+      "reasoning": "Tyson Fury is known for his size, reach, and boxing skills, which give him an advantage in heavyweight bouts. However, Oleksandr Usyk is an exceptionally skilled boxer with a strong track record, including victories over top opponents. The fight is expected to be competitive, with both fighters having a legitimate chance of winning. Given Fury's experience and physical advantages, I estimate a slightly higher probability of him winning.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_033",
+      "question": "Will Inter Miami win MLS Cup 2024?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "none",
+      "mode": "no_search",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "Inter Miami has shown significant improvement since the arrival of high-profile players, including Lionel Messi. Their performance in the 2023 season and the early part of the 2024 season suggests they are competitive. However, the MLS is unpredictable, with several strong teams capable of winning the cup. Given the competitive landscape and potential injuries or form fluctuations, a probability of 45% reflects a strong chance but acknowledges the uncertainty.",
+      "search_queries_used": [],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_001",
+      "question": "Will Donald Trump win the 2024 US presidential election?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.55,
+      "brier_score": 0.20249999999999996,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "The political landscape leading up to the 2024 election shows a competitive race between Donald Trump and Kamala Harris, with polls indicating a deadlock among registered voters. While some forecasts suggest a favorable outlook for Trump, the uncertainty remains high, with many voters unsure of the outcome. The expectation that Trump may not concede if he loses could also influence voter sentiment. Overall, the combination of competitive polling and the potential for shifts in public opinion leads to a moderate probability of Trump winning the election.",
+      "search_queries_used": [
+        "Will Donald Trump win the 2024 US presidential election?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_002",
+      "question": "Will Joe Biden be the 2024 Democratic nominee?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.7224999999999999,
+      "log_loss": 1.897119984885881,
+      "reasoning": "Joe Biden has clinched the 2024 Democratic nomination by securing enough delegates, making him the presumptive nominee. While there are discussions among some Democrats about potentially replacing him, the historical context suggests that replacing a nominee is highly challenging and unlikely without their consent. Given that Biden has faced minimal opposition and has the support of the party establishment, the probability of him being the nominee remains high.",
+      "search_queries_used": [
+        "Will Joe Biden be the 2024 Democratic nominee?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_003",
+      "question": "Will Joe Biden pardon Hunter Biden?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.05,
+      "brier_score": 0.9025,
+      "log_loss": 2.995732273553991,
+      "reasoning": "The White House has consistently stated that President Biden has no plans to pardon his son, Hunter Biden, despite multiple inquiries. The press secretary has reiterated this position, indicating a strong stance against a pardon. Given the upcoming sentencing and the lack of any indication from the administration that this position will change, the probability of a pardon being granted appears very low.",
+      "search_queries_used": [
+        "Will Joe Biden pardon Hunter Biden?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_004",
+      "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Donald Trump has already been found guilty on all counts in his New York hush money trial, making him the first former president in U.S. history to be convicted of a crime. Given this conviction, the likelihood of him being convicted in a criminal trial in 2024 is high. However, the final sentencing has not yet occurred, and potential appeals could affect the outcome, which is why the probability is not at 1.0.",
+      "search_queries_used": [
+        "Will Donald Trump be convicted in a criminal trial in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_005",
+      "question": "Will the US Supreme Court uphold the TikTok ban?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "The Supreme Court's decision on the TikTok ban is highly contingent on the interpretation of national security concerns versus First Amendment rights. While the government has strong arguments regarding data privacy and security, TikTok's appeal emphasizes significant free speech implications. Given the divided nature of the Court on similar issues and the potential for public backlash against a ban affecting millions of users, there is a reasonable chance that the Court may lean towards upholding TikTok's rights, but the national security argument is also compelling. Therefore, a probability of 0.35 reflects a moderate likelihood of the ban being upheld.",
+      "search_queries_used": [
+        "Will the US Supreme Court uphold the TikTok ban?"
+      ],
+      "num_results_used": 3
+    },
+    {
+      "question_id": "pm_006",
+      "question": "Will the Republicans win control of the US Senate in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The YouGov model indicates that Republicans have a slight edge in winning control of the Senate, with favorable conditions in several key races. Additionally, the Cook Political Report has shifted some races to lean Republican, further supporting the notion that Republicans are gaining ground. While there are toss-up seats and close races, the overall trend suggests a stronger position for Republicans as of late September 2024. Therefore, a probability of 0.65 reflects a reasonable assessment of their chances.",
+      "search_queries_used": [
+        "Will the Republicans win control of the US Senate in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_007",
+      "question": "Will there be a US Supreme Court vacancy in 2024?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "While there is speculation about potential vacancies on the Supreme Court, historical patterns indicate that justices do not often resign or retire, especially in the absence of significant health issues or political pressure. The recent reports suggest that Justice Sotomayor has no plans to resign, and justices typically resist public pressure to step down. Given that the average retirement age is around 75 and Sotomayor is only 70, the likelihood of a vacancy occurring in 2024 seems relatively low. Therefore, I estimate a 30% probability of a Supreme Court vacancy in 2024.",
+      "search_queries_used": [
+        "Will there be a US Supreme Court vacancy in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_008",
+      "question": "Will Sweden join NATO in 2024?",
+      "category": "geopolitics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Turkey has ratified Sweden's NATO membership, which was the most significant hurdle in the process. The only remaining obstacle is Hungary's approval, which is expected to follow Turkey's lead. Given the political context and the urgency for Sweden to join NATO in light of security concerns, it is likely that Hungary will ratify Sweden's membership soon. Therefore, the probability of Sweden joining NATO in 2024 is high.",
+      "search_queries_used": [
+        "Will Sweden join NATO in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_009",
+      "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.25,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "While there are discussions and some indications that both Russia and Ukraine may consider a ceasefire, the prevailing sentiment in the analysis suggests that achieving a ceasefire by the end of 2024 is unlikely. Both sides appear to be preparing for continued conflict rather than a lasting peace, with Russia likely to use any ceasefire to strengthen its military capabilities. Additionally, the focus on a potential ceasefire in 2025 rather than 2024 indicates that a resolution within the current year is not anticipated. Therefore, the probability of an agreement by the end of 2024 is estimated to be low.",
+      "search_queries_used": [
+        "Will Russia and Ukraine agree to a ceasefire by end of 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_010",
+      "question": "Will China take military action against Taiwan in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.15,
+      "brier_score": 0.0225,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "The prevailing analysis indicates that while tensions between China and Taiwan are expected to persist, a major military confrontation is deemed very unlikely in 2024. Reports suggest that China is likely to prioritize intimidation and coercion over direct military action, with a significant majority of Taiwanese people believing an invasion is unlikely in the near future. Additionally, China's military strategy appears to focus on building capacity for rapid strikes rather than outright invasion, further supporting the view that military action is not imminent.",
+      "search_queries_used": [
+        "Will China take military action against Taiwan in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_011",
+      "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "There are positive developments indicating that Israel and Hamas are inching closer to a ceasefire deal, with increased willingness from both sides and active mediation from international parties. However, significant sticking points remain, and while there is renewed hope, the complexity of the situation suggests that a permanent ceasefire by the end of 2024 is still uncertain.",
+      "search_queries_used": [
+        "Will Israel and Hamas reach a permanent ceasefire by end of 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_012",
+      "question": "Will North Korea conduct a nuclear test in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "North Korea has reportedly completed preparations for a nuclear test and is poised to conduct such a test, particularly around significant political events like the U.S. elections. Multiple sources indicate that the South Korean military believes North Korea is ready for both nuclear and ICBM tests. However, there are also expert opinions suggesting that conducting a test could provoke backlash from key allies like Russia and China, which may deter North Korea from proceeding. Given the high level of readiness and the historical context of North Korea's testing behavior, I estimate a 75% probability that North Korea will conduct a nuclear test in 2024.",
+      "search_queries_used": [
+        "Will North Korea conduct a nuclear test in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_013",
+      "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The SEC has set a final deadline for decisions on Bitcoin spot ETF applications for January 15, 2024, and there are indications that approvals may be forthcoming in early January. Recent reports suggest that discussions between the SEC and asset managers have progressed to technical details, which is a positive sign for potential approvals. Given the high level of anticipation and optimism surrounding these applications, particularly from major firms like BlackRock, there is a strong likelihood that at least one spot Bitcoin ETF will be approved by the deadline.",
+      "search_queries_used": [
+        "Will a Bitcoin spot ETF be approved by January 15, 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_014",
+      "question": "Will Bitcoin reach $100,000 by end of 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.68,
+      "brier_score": 0.10239999999999996,
+      "log_loss": 0.3856624808119846,
+      "reasoning": "As of November 2024, Bitcoin is trading near record highs, with recent predictions suggesting a strong possibility of reaching $100,000 by the end of the year. The sentiment in the market is positive, driven by factors such as Donald Trump's pro-crypto stance and historical price patterns following Bitcoin halving events. However, there are also warnings about potential market corrections and external economic factors that could impact Bitcoin's price trajectory. Given the current momentum and expert predictions, a probability of 68% reflects a balanced view of optimism tempered by caution.",
+      "search_queries_used": [
+        "Will Bitcoin reach $100,000 by end of 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_015",
+      "question": "Will an Ethereum spot ETF be approved in 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.15,
+      "brier_score": 0.7224999999999999,
+      "log_loss": 1.8971199848858813,
+      "reasoning": "The overwhelming sentiment from industry sources and analysts indicates that the SEC is expected to deny spot Ethereum ETF applications in May 2024. Reports suggest discouraging feedback from the SEC during meetings and a lack of specific communication, which further supports the likelihood of denial. Additionally, while there are some opinions suggesting a chance of approval, they are overshadowed by the prevailing expectation of rejection, leading to a low probability of approval.",
+      "search_queries_used": [
+        "Will an Ethereum spot ETF be approved in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_016",
+      "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?",
+      "category": "crypto",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "There is a significant sentiment among analysts and consumers that Bitcoin could drop below $20,000 in 2024. Notably, a Deutsche Bank survey indicated that a third of respondents expect Bitcoin to fall below this threshold by the end of the year. Additionally, prominent figures like Peter Schiff have consistently predicted a decline to this level. However, there are also optimistic forecasts suggesting potential price increases, which indicates some uncertainty. Overall, the bearish sentiment appears strong enough to warrant a moderate probability of a drop below $20,000.",
+      "search_queries_used": [
+        "Will Bitcoin's price drop below $20,000 at any point in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_017",
+      "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The recent articles indicate a strong consensus among Fed policymakers on the need for rate cuts, with a significant shift in sentiment towards a 50 basis point cut at the September meeting. The first article confirms that the Fed has already implemented a 50 basis point cut, suggesting a willingness to make larger adjustments. However, there are indications that future cuts may be smaller, with expectations of 25 basis point reductions in subsequent meetings. This creates uncertainty about whether the Fed will continue with a 50 basis point cut specifically at the September meeting. Therefore, while there is a favorable outlook for a 50 basis point cut, the presence of dissenting opinions and the potential for smaller cuts leads to a moderate probability estimate.",
+      "search_queries_used": [
+        "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?"
+      ],
+      "num_results_used": 4
+    },
+    {
+      "question_id": "pm_018",
+      "question": "Will the Federal Reserve cut interest rates before July 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.05,
+      "brier_score": 0.0025000000000000005,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "The majority of economists and market predictions indicate that the Federal Reserve is unlikely to cut interest rates before July 2024, with most forecasts pointing to September as the earliest possible date for a rate cut. Only a small number of economists (five out of 116) expect a cut in July, suggesting that the consensus is firmly against any rate reduction occurring before that time. Given the prevailing economic conditions and the Fed's cautious stance on inflation, the probability of a rate cut before July is very low.",
+      "search_queries_used": [
+        "Will the Federal Reserve cut interest rates before July 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_019",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.68,
+      "brier_score": 0.10239999999999996,
+      "log_loss": 0.3856624808119846,
+      "reasoning": "The search results indicate a strong bullish sentiment among industry analysts and major financial institutions regarding the S&P 500's performance in 2024. Multiple sources, including Bank of America and RBC Capital Markets, predict that the index will reach or exceed the 5,000 mark, citing factors such as easing interest rates and strong investor sentiment. However, there remains some uncertainty as not all analysts agree on this outcome, suggesting a moderate level of risk. Therefore, a probability of 0.68 reflects a favorable outlook while acknowledging the potential for volatility.",
+      "search_queries_used": [
+        "Will the S&P 500 close above 5,000 in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_020",
+      "question": "Will the US economy enter a recession in 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "Multiple credible sources indicate a significant risk of recession in 2024, with estimates ranging from 35% to as high as 70%. Key indicators such as rising unemployment, increasing layoffs, and deteriorating consumer financial conditions suggest a downturn is likely. The consensus among economists is leaning towards a recession occurring, especially given the economic signals observed in late 2024.",
+      "search_queries_used": [
+        "Will the US economy enter a recession in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_021",
+      "question": "Will OpenAI release GPT-5 by end of 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.05,
+      "brier_score": 0.0025000000000000005,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "OpenAI's CEO Sam Altman has explicitly stated that there will be no GPT-5 released in 2024, as the company is focusing on a different model, GPT-o1. This clear communication from the CEO significantly reduces the likelihood of a GPT-5 release by the end of the year. While there may be new AI models introduced, they will not be branded as GPT-5, leading to a very low probability of this outcome.",
+      "search_queries_used": [
+        "Will OpenAI release GPT-5 by end of 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_022",
+      "question": "Will Apple release the Vision Pro in Q1 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.95,
+      "brier_score": 0.0025000000000000044,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "Apple has officially announced that the Vision Pro will launch on February 2, 2024, with pre-orders starting on January 19, 2024. This clear communication from Apple indicates a strong commitment to the release timeline, making it highly likely that the Vision Pro will indeed be released in Q1 2024.",
+      "search_queries_used": [
+        "Will Apple release the Vision Pro in Q1 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_023",
+      "question": "Will Neuralink implant a brain chip in a human in 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Neuralink has made significant progress towards human trials, with reports indicating that they are actively seeking volunteers for their first clinical trial. Additionally, there are claims that the first human patient has already received an implant as of early January 2024. Given this momentum and the company's focus on advancing their technology, it seems likely that they will successfully implant a brain chip in a human within 2024. However, there are still regulatory and ethical considerations that could impact the timeline, which is why the probability is not higher.",
+      "search_queries_used": [
+        "Will Neuralink implant a brain chip in a human in 2024?"
+      ],
+      "num_results_used": 3
+    },
+    {
+      "question_id": "pm_024",
+      "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.15,
+      "brier_score": 0.0225,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "While Tesla has unveiled the Cybercab and plans to roll out fully autonomous driving technology, the consensus from multiple sources indicates that the actual production of the robotaxi is not expected to begin until 2026 or later. Elon Musk himself acknowledged his tendency to be overly optimistic with timelines, and regulatory approvals are also a significant factor that could delay the rollout. Given these considerations, the likelihood of Tesla selling a fully autonomous robotaxi in 2024 is quite low.",
+      "search_queries_used": [
+        "Will Tesla begin selling a fully autonomous robotaxi in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_025",
+      "question": "Will NASA's Artemis II mission launch in 2024?",
+      "category": "science",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.01,
+      "brier_score": 0.0001,
+      "log_loss": 0.01005033585350145,
+      "reasoning": "NASA has officially announced that the Artemis II mission has been delayed until at least April 2026. Given this confirmed delay and the historical context of space mission timelines, it is highly unlikely that the mission will launch in 2024.",
+      "search_queries_used": [
+        "Will NASA's Artemis II mission launch in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_026",
+      "question": "Will there be a successful commercial Moon landing in early 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of February 8, 2024, Intuitive Machines is targeting a launch of its lunar lander mission on February 14, 2024. This mission aims to achieve a commercial Moon landing, which would be a significant milestone. However, the launch has not yet occurred, and there are inherent risks associated with space missions, including technical challenges and potential delays. Given that the launch is planned for mid-February and the mission's success is uncertain until it is completed, I estimate a probability of 65% for a successful commercial Moon landing in early 2024.",
+      "search_queries_used": [
+        "Will there be a successful commercial Moon landing in early 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_027",
+      "question": "Will Boeing Starliner complete a crewed launch in 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Boeing's Starliner is set for its inaugural crewed launch on May 6, 2024, after years of delays and technical issues. Recent reports confirm that NASA has given the green light for this launch, indicating that the spacecraft has passed necessary safety checks and is ready for the mission. While there is always some risk associated with space launches, the current status suggests a high likelihood of success for this upcoming crewed flight.",
+      "search_queries_used": [
+        "Will Boeing Starliner complete a crewed launch in 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_028",
+      "question": "Will the Kansas City Chiefs win Super Bowl LVIII?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Kansas City Chiefs have a strong track record, having won two of the last three Super Bowls and consistently performing well in the playoffs under Patrick Mahomes. They are favored to repeat as champions, indicating confidence from analysts and oddsmakers. However, their recent performance has shown some vulnerabilities, particularly with the potential for a challenging postseason path. Given these factors, there is a solid chance they could win, but the uncertainty of playoff matchups and potential upsets lowers the probability slightly.",
+      "search_queries_used": [
+        "Will the Kansas City Chiefs win Super Bowl LVIII?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_029",
+      "question": "Will the Boston Celtics win the 2024 NBA Championship?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "The Boston Celtics have already won the 2024 NBA Championship, as indicated in the Wikipedia entry stating they defeated the Dallas Mavericks in the Finals. Additionally, they had the best regular season record at 64-18 and were considered favorites throughout the playoffs. Given this information, the probability of them winning the championship is very high.",
+      "search_queries_used": [
+        "Will the Boston Celtics win the 2024 NBA Championship?"
+      ],
+      "num_results_used": 3
+    },
+    {
+      "question_id": "pm_030",
+      "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Caitlin Clark is widely regarded as the top prospect for the 2024 WNBA Draft, with multiple sources confirming her status as the likely No. 1 pick by the Indiana Fever. Her recent announcement to enter the draft and her record-breaking performance in college solidify her position as a strong candidate for the top selection. While unexpected events can occur in the lead-up to the draft, the consensus among analysts is that she is a 'lock' for the No. 1 pick, leading to a high probability of her being selected first.",
+      "search_queries_used": [
+        "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_031",
+      "question": "Will the Los Angeles Dodgers win the 2024 World Series?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "The Los Angeles Dodgers have made significant investments in their roster, including acquiring top talent like Shohei Ohtani and a leading pitcher from Japan. However, their chances of winning the World Series are severely impacted by injuries to key starting pitchers such as Clayton Kershaw and others. The absence of these players could hinder their performance in the postseason, making it less likely for them to secure the championship despite their strong lineup.",
+      "search_queries_used": [
+        "Will the Los Angeles Dodgers win the 2024 World Series?"
+      ],
+      "num_results_used": 1
+    },
+    {
+      "question_id": "pm_032",
+      "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.55,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177717,
+      "reasoning": "The fight between Tyson Fury and Oleksandr Usyk is highly anticipated, with both fighters being undefeated and possessing unique strengths. Fury's size and experience give him a notable advantage, as he is significantly larger than Usyk. However, Usyk's speed and tactical skills have proven effective against other top fighters, including Anthony Joshua. The betting odds slightly favor Fury, indicating a close matchup. Given these factors, I estimate a 55% probability that Fury will win, reflecting a balance between his physical advantages and Usyk's proven capabilities.",
+      "search_queries_used": [
+        "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?"
+      ],
+      "num_results_used": 3
+    },
+    {
+      "question_id": "pm_033",
+      "question": "Will Inter Miami win MLS Cup 2024?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "Inter Miami has had a strong season, winning the Supporters' Shield, which indicates they are one of the top teams in the league. With Lionel Messi leading the team, they have a significant advantage in the playoffs. However, the knockout format of the playoffs introduces uncertainty, as any team can be eliminated in a single match. While they are strong contenders, the presence of other competitive teams like Columbus Crew and LAFC adds to the unpredictability of the outcome.",
+      "search_queries_used": [
+        "Will Inter Miami win MLS Cup 2024?"
+      ],
+      "num_results_used": 5
+    },
+    {
+      "question_id": "pm_001",
+      "question": "Will Donald Trump win the 2024 US presidential election?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.55,
+      "brier_score": 0.20249999999999996,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of October 2023, polls indicate a competitive race between Donald Trump and Joe Biden, with some polls showing Trump leading by small margins. Trump's support among young voters appears to be increasing, and he has maintained a strong base within the Republican Party. However, Biden's approval ratings are low, and there are signs of vulnerability, particularly regarding his age and perceived effectiveness. The emergence of Kamala Harris as a candidate could complicate Trump's path to victory, as she has shown to be competitive in polls against him. Overall, while Trump has a reasonable chance of winning, the race remains close and uncertain, justifying a probability of 0.55.",
+      "search_queries_used": [
+        "Donald Trump 2024 presidential election polls October 2023",
+        "2024 US presidential election candidates analysis Trump",
+        "public opinion on Donald Trump 2024 election chances"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_002",
+      "question": "Will Joe Biden be the 2024 Democratic nominee?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "Joe Biden has faced significant challenges regarding his approval ratings and favorability among voters, with many polls indicating a desire among Democrats for a different nominee. However, he has also secured enough delegates to be considered the presumptive nominee, and the Democratic Party has historically rallied around incumbents. Given the mixed signals from polling data and the party's tendency to support its sitting president, I estimate a moderate probability that Biden will be the 2024 Democratic nominee.",
+      "search_queries_used": [
+        "Joe Biden 2024 Democratic nominee polls October 2023",
+        "2024 Democratic primary candidates analysis Joe Biden",
+        "Joe Biden approval ratings impact on 2024 nomination chances"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_003",
+      "question": "Will Joe Biden pardon Hunter Biden?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.05,
+      "brier_score": 0.9025,
+      "log_loss": 2.995732273553991,
+      "reasoning": "President Joe Biden has publicly stated multiple times that he will not pardon his son Hunter Biden if he is convicted of the charges against him. This includes explicit statements made in interviews and by the White House, indicating a firm stance against using his presidential power to intervene in his son's legal issues. Given this context, the likelihood of a pardon being issued is extremely low.",
+      "search_queries_used": [
+        "Joe Biden Hunter Biden pardon news October 2023",
+        "Hunter Biden legal situation updates October 2023",
+        "Joe Biden statements on pardoning family members 2023"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_004",
+      "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "As of May 16, 2024, Donald Trump has already been found guilty on all 34 felony counts related to the hush money payments to Stormy Daniels. This historic verdict marks him as the first former president to be convicted of a crime. Given the legal context and the nature of the charges, it is highly probable that he will face sentencing, which could include incarceration, although the exact outcome may vary based on the judge's discretion. The strong evidence presented during the trial and the jury's unanimous decision contribute to a high likelihood of conviction in this case.",
+      "search_queries_used": [
+        "Donald Trump criminal trial conviction likelihood 2024",
+        "Donald Trump legal defenses 2024 criminal charges",
+        "recent news Donald Trump trial outcomes 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_005",
+      "question": "Will the US Supreme Court uphold the TikTok ban?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The U.S. Supreme Court is set to hear arguments regarding the constitutionality of a law that could lead to a TikTok ban due to national security concerns. Given the bipartisan support for the ban among lawmakers and the significant public perception of TikTok as a national security threat, there is a strong likelihood that the Court will uphold the law. Additionally, the lower courts have already upheld the law, indicating a trend towards supporting the government's position. However, the outcome is not guaranteed, as the Court's decision could hinge on interpretations of the First Amendment and other legal arguments presented by TikTok.",
+      "search_queries_used": [
+        "US Supreme Court TikTok ban decision 2023",
+        "TikTok ban legal challenges Supreme Court ruling",
+        "public opinion US Supreme Court TikTok case 2023"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_006",
+      "question": "Will the Republicans win control of the US Senate in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The search results indicate a strong likelihood that Republicans will gain control of the U.S. Senate in 2024. With 23 Democratic seats up for election, including vulnerable incumbents in states that have historically favored Republicans, the electoral landscape appears favorable for the GOP. Reports suggest that Republicans are likely to flip key seats, such as those in West Virginia and Montana, and they only need a net gain of one or two seats to secure a majority. Additionally, the overall political environment, including the potential coattails of Donald Trump in the presidential race, further enhances Republican prospects. While there are uncertainties, the combination of favorable conditions and the need for Democrats to defend a significant number of seats leads to a high probability of a Republican Senate takeover.",
+      "search_queries_used": [
+        "Republicans control US Senate 2024 election predictions",
+        "2024 Senate election polls Republican vs Democrat",
+        "factors influencing Republican Senate success 2024"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_007",
+      "question": "Will there be a US Supreme Court vacancy in 2024?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "Given the ages of Justices Clarence Thomas (76) and Samuel Alito (74), there is significant speculation about their potential retirements, especially with Donald Trump returning to power. Historical patterns suggest that justices often retire in their late 70s or early 80s, and the political context may encourage them to step down. However, justices have also been known to remain on the bench longer than expected, making the outcome uncertain. Therefore, while there is a reasonable chance of a vacancy occurring in 2024, it is not guaranteed.",
+      "search_queries_used": [
+        "US Supreme Court vacancies 2024 predictions",
+        "current health status of US Supreme Court justices 2024",
+        "historical trends of Supreme Court vacancies in election years"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_008",
+      "question": "Will Sweden join NATO in 2024?",
+      "category": "geopolitics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Turkey has ratified Sweden's NATO membership, which was the most significant hurdle in the process. The only remaining obstacle is Hungary's approval, which is expected to follow soon given Hungary's previous indications of support. Public sentiment in Sweden is largely in favor of joining NATO, and there is a strong political will to finalize the membership. Therefore, the probability of Sweden joining NATO in 2024 is high, but not guaranteed due to the remaining step with Hungary.",
+      "search_queries_used": [
+        "Sweden NATO membership news 2024",
+        "Sweden NATO accession opposition reasons 2024",
+        "Sweden public opinion NATO membership 2024"
+      ],
+      "num_results_used": 13
+    },
+    {
+      "question_id": "pm_009",
+      "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "While there have been recent discussions and some support for a ceasefire, particularly with the backing of figures like Donald Trump and Viktor Orban, the fundamental disagreements between Russia and Ukraine remain significant. Russia's insistence on conditions such as Ukraine's withdrawal from occupied territories and renouncing NATO membership are non-starters for Ukraine. Additionally, the Kremlin has indicated a lack of grounds for negotiations, suggesting that any ceasefire agreement is unlikely without substantial changes in the current political landscape. Therefore, while there is some movement towards discussions, the entrenched positions of both sides lead to a moderate probability of a ceasefire being agreed upon by the end of 2024.",
+      "search_queries_used": [
+        "Russia Ukraine ceasefire negotiations 2024 news",
+        "Russia Ukraine conflict ceasefire obstacles 2024",
+        "recent statements Russia Ukraine leaders ceasefire agreement 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_010",
+      "question": "Will China take military action against Taiwan in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.25,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The prevailing intelligence assessments indicate that China is likely to prioritize intimidation and coercion over direct military action against Taiwan in the near term. Reports suggest a 75% likelihood that China will continue its strategy of intimidation without launching a full-scale military operation. While there is a significant buildup of military capacity and ongoing military exercises around Taiwan, these actions appear to be aimed at coercion rather than immediate invasion. Additionally, the geopolitical context, including U.S. support for Taiwan and the potential for miscalculation, suggests that while the risk of conflict remains, outright military action in 2024 is not the most probable outcome.",
+      "search_queries_used": [
+        "China Taiwan military action predictions 2024",
+        "Taiwan defense strategies against China 2024",
+        "international response to China Taiwan tensions 2024"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_011",
+      "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, there are positive signs indicating that Israel and Hamas are inching closer to a ceasefire agreement, with negotiators from the U.S., Qatar, and Egypt actively involved in mediation efforts. Recent reports suggest that both sides are showing greater willingness to negotiate, with Hamas expressing flexibility on certain demands. However, significant obstacles remain, including unresolved key details and mutual distrust. While the momentum toward a ceasefire is encouraging, the complexity of the situation and the history of failed negotiations suggest that while a ceasefire is possible, it is not guaranteed. Therefore, a probability of 0.65 reflects a cautious optimism about the likelihood of achieving a permanent ceasefire by the end of 2024.",
+      "search_queries_used": [
+        "Israel Hamas ceasefire negotiations 2024 news",
+        "Israel Hamas conflict ceasefire obstacles 2024",
+        "expert analysis Israel Hamas peace talks 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_012",
+      "question": "Will North Korea conduct a nuclear test in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "There is significant intelligence indicating that North Korea is prepared to conduct a nuclear test, potentially before or after the U.S. presidential election in November 2024. Reports from the South Korean Defense Intelligence Agency and the National Intelligence Service suggest that North Korea is likely to stage a major provocation, such as a nuclear test, to draw attention to its nuclear capabilities. However, there are also indications that such a test could be postponed due to geopolitical considerations, particularly to avoid angering key allies like Russia and China. Given the mixed signals but overall readiness for a test, I estimate a probability of 65%.",
+      "search_queries_used": [
+        "North Korea nuclear test predictions 2024",
+        "North Korea nuclear disarmament talks 2024",
+        "recent North Korea missile tests news 2023"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_013",
+      "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "There is significant optimism surrounding the approval of a Bitcoin spot ETF by January 15, 2024, with multiple sources indicating a high likelihood of approval, ranging from 90% to nearly 99%. Analysts have noted a 'clear runway' for approvals, suggesting that the SEC may be prepared to approve multiple applications simultaneously. However, the SEC's historically cautious approach and potential for delays still introduce some uncertainty, leading to a probability estimate of 85%.",
+      "search_queries_used": [
+        "Bitcoin spot ETF approval news January 2024",
+        "regulatory challenges Bitcoin ETF approval 2024",
+        "expert opinions Bitcoin ETF January 2024 approval likelihood"
+      ],
+      "num_results_used": 6
+    },
+    {
+      "question_id": "pm_014",
+      "question": "Will Bitcoin reach $100,000 by end of 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of November 2024, Bitcoin has shown significant price momentum, recently reaching highs above $66,000. The optimism surrounding Bitcoin's potential to hit $100,000 by the end of 2024 is bolstered by factors such as increasing institutional interest, the approval of Bitcoin ETFs, and historical price patterns that suggest a bullish trend in pre-halving years. However, there are still uncertainties, including potential market corrections and regulatory challenges that could impact price stability. Given the current trajectory and expert predictions, a probability of 65% reflects a balanced view of the optimistic outlook against the inherent volatility of cryptocurrency markets.",
+      "search_queries_used": [
+        "Bitcoin price prediction 2024 $100,000",
+        "Bitcoin market analysis October 2023",
+        "factors affecting Bitcoin price growth 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_015",
+      "question": "Will an Ethereum spot ETF be approved in 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "While there was initial optimism regarding the approval of a spot Ethereum ETF following the approval of Bitcoin ETFs in January 2024, recent reports indicate a significant shift in sentiment. Industry sources suggest that the SEC is likely to deny the applications for Ethereum ETFs due to discouraging feedback from recent meetings. Analysts have downgraded their expectations, with some estimating the chances of approval as low as 25%. Given the SEC's historical skepticism towards cryptocurrencies and the lack of positive engagement from the agency, the probability of approval in 2024 appears to be low.",
+      "search_queries_used": [
+        "Ethereum spot ETF approval news 2024",
+        "Ethereum ETF regulatory challenges 2024",
+        "expert opinions Ethereum spot ETF approval 2024"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_016",
+      "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?",
+      "category": "crypto",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.05,
+      "brier_score": 0.0025000000000000005,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "Given the strong bullish sentiment surrounding Bitcoin's price predictions for 2024, with multiple analysts forecasting significant increases (up to $150,000), it seems unlikely that Bitcoin will drop below $20,000 at any point during the year. The upcoming halving event is expected to further drive demand, and the overall market sentiment appears to be positive. However, the inherent volatility of cryptocurrencies means that while a drop below $20,000 is possible, it is considered highly improbable given the current forecasts and market dynamics.",
+      "search_queries_used": [
+        "Bitcoin price forecast 2024 analysis",
+        "Bitcoin market trends October 2023",
+        "expert opinions on Bitcoin price fluctuations 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_017",
+      "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The Federal Reserve has already cut interest rates by 50 basis points at the September 2024 meeting, indicating a significant shift in monetary policy. This decision reflects concerns about the economic outlook and a desire to support the labor market. Given that the cut has already occurred, the probability of a 50 basis point cut being confirmed is high.",
+      "search_queries_used": [
+        "Federal Reserve interest rate cut September 2024 news",
+        "analysts predictions Federal Reserve interest rates September 2024",
+        "economic indicators impact Federal Reserve interest rates September 2024"
+      ],
+      "num_results_used": 8
+    },
+    {
+      "question_id": "pm_018",
+      "question": "Will the Federal Reserve cut interest rates before July 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "The Federal Reserve has indicated a cautious approach to interest rate cuts, with recent projections suggesting only one cut in 2024. While some economists predict two cuts, the consensus among Fed policymakers is to wait for clearer signs of inflation control before making any reductions. Given the current economic conditions and the Fed's recent statements, the likelihood of a rate cut before July 2024 appears limited, leading to a probability of around 30%.",
+      "search_queries_used": [
+        "Federal Reserve interest rate cut predictions 2024",
+        "economic indicators affecting Federal Reserve interest rate decisions 2024",
+        "analyst opinions on Federal Reserve rate cuts before July 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_019",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "The S&P 500 closed at approximately 4,770 at the end of 2023, and while there are bullish forecasts predicting it could reach 5,000 or higher in 2024, there are also significant concerns about a potential mild recession and high valuations. Analysts have mixed predictions, with some expecting modest growth and others more optimistic. Given the current economic uncertainties and the need for a substantial increase from its current level, the probability of the S&P 500 closing above 5,000 seems limited.",
+      "search_queries_used": [
+        "S&P 500 forecast 2024 analysis",
+        "S&P 500 historical performance trends 2023",
+        "economic indicators impact on S&P 500 2024"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_020",
+      "question": "Will the US economy enter a recession in 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The probability of a recession in the US economy for 2024 has been a topic of significant debate among economists. Recent reports indicate a range of probabilities, with Goldman Sachs estimating a 15% chance as of October 2024, while JPMorgan raised its estimate to 35%. Other economists have suggested probabilities as high as 85%, but these figures appear to be outliers. The consensus seems to lean towards a lower probability of recession, particularly given the resilience in the job market and signs of economic stability. However, the presence of various recession indicators and the potential for economic slowdown suggest that a moderate probability of around 35% is reasonable, reflecting both the optimistic and cautious perspectives in the current economic climate.",
+      "search_queries_used": [
+        "US economy recession forecast 2024",
+        "economic indicators predicting US recession 2024",
+        "expert opinions on US recession likelihood 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_021",
+      "question": "Will OpenAI release GPT-5 by end of 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.25,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Based on the statements from OpenAI's CEO Sam Altman, it appears that GPT-5 is unlikely to be released by the end of 2024. Altman has indicated that the model is taking longer to develop than expected and has explicitly mentioned that it likely won't be released this year. Additionally, various sources suggest that the release is more likely to occur in early 2025. Given this information, the probability of GPT-5 being released by the end of 2024 is low.",
+      "search_queries_used": [
+        "OpenAI GPT-5 release date news 2024",
+        "OpenAI statements on GPT-5 development timeline",
+        "GPT-5 features and expected launch updates 2024"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_022",
+      "question": "Will Apple release the Vision Pro in Q1 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.95,
+      "brier_score": 0.0025000000000000044,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "Apple has officially announced that the Vision Pro will be available in the U.S. starting February 2, 2024, with pre-orders beginning on January 19, 2024. This strong indication from Apple suggests that the release is confirmed for Q1 2024. While there have been reports of production challenges, the announcement from Apple indicates that they are prepared to launch the product as scheduled. Therefore, the probability of the Vision Pro being released in Q1 2024 is very high.",
+      "search_queries_used": [
+        "Apple Vision Pro release date Q1 2024 news",
+        "Apple Vision Pro production delays or issues 2024",
+        "analysts predictions Apple Vision Pro launch timeline"
+      ],
+      "num_results_used": 10
+    },
+    {
+      "question_id": "pm_023",
+      "question": "Will Neuralink implant a brain chip in a human in 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Neuralink has received FDA approval for human trials, which is a significant step towards implanting a brain chip in humans. While recruitment for the trials had not yet started as of January 2024, the company has indicated that it is moving forward with its plans. Given the advancements and approvals already in place, there is a strong likelihood that they will successfully implant a chip in a human within 2024, though some uncertainties remain regarding the recruitment process and potential ethical concerns.",
+      "search_queries_used": [
+        "Neuralink human trials 2024 news",
+        "Neuralink brain chip FDA approval status 2024",
+        "Neuralink ethical concerns human implantation 2024"
+      ],
+      "num_results_used": 6
+    },
+    {
+      "question_id": "pm_024",
+      "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.15,
+      "brier_score": 0.0225,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "While Tesla has unveiled a prototype of the Cybercab robotaxi and expressed intentions to roll out autonomous driving technology, multiple sources indicate that the actual availability of a fully autonomous robotaxi in 2024 is highly unlikely. Elon Musk himself mentioned that production would begin 'before 2027,' and there are significant regulatory hurdles and technological challenges that need to be addressed before such a vehicle can be legally operated. Given these factors, the probability of Tesla selling a fully autonomous robotaxi in 2024 is low.",
+      "search_queries_used": [
+        "Tesla fully autonomous robotaxi news 2024",
+        "Tesla robotaxi development updates 2023",
+        "expert opinions on Tesla robotaxi feasibility 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_025",
+      "question": "Will NASA's Artemis II mission launch in 2024?",
+      "category": "science",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.05,
+      "brier_score": 0.0025000000000000005,
+      "log_loss": 0.05129329438755058,
+      "reasoning": "NASA has officially delayed the Artemis II mission to at least April 2026, with no possibility of launching in 2024. Given the current timeline and the history of delays in the Artemis program, it is highly unlikely that the mission will launch in 2024.",
+      "search_queries_used": [
+        "NASA Artemis II mission launch schedule 2024 news",
+        "Artemis II mission delays challenges 2024",
+        "NASA Artemis II mission updates 2024 launch readiness"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_026",
+      "question": "Will there be a successful commercial Moon landing in early 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.25,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of February 8, 2024, there have been significant setbacks for the private lunar lander missions, particularly with Astrobotic's Peregrine lander, which has encountered critical anomalies that jeopardize its mission to land on the Moon. While there is still a chance for Intuitive Machines' Nova-C lander to succeed, the recent failures highlight the inherent risks and challenges of commercial lunar landings. Given these factors, the probability of a successful commercial Moon landing in early 2024 is estimated to be relatively low.",
+      "search_queries_used": [
+        "successful commercial Moon landing plans 2024",
+        "challenges facing commercial Moon landings 2024",
+        "recent news on lunar missions 2024"
+      ],
+      "num_results_used": 9
+    },
+    {
+      "question_id": "pm_027",
+      "question": "Will Boeing Starliner complete a crewed launch in 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 22, 2024, Boeing's Starliner has faced multiple delays primarily due to technical issues, including a helium leak that has pushed the launch date to May 25. While the launch is still scheduled, the history of delays and ongoing technical challenges raises uncertainty about whether it will successfully complete a crewed launch on that date. Given these factors, a probability of 45% reflects a cautious optimism that the launch may occur, but acknowledges the significant risks involved.",
+      "search_queries_used": [
+        "Boeing Starliner crewed launch schedule 2024 news",
+        "Boeing Starliner delays issues 2024",
+        "NASA Boeing Starliner crewed launch updates 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_028",
+      "question": "Will the Kansas City Chiefs win Super Bowl LVIII?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "The Kansas City Chiefs are strong contenders for Super Bowl LVIII, having reached their sixth Super Bowl and fourth in five seasons, indicating a level of consistency and skill. However, they are facing the San Francisco 49ers, who have a slight edge according to the Football Power Index (FPI) with a 59% chance of winning. The Chiefs have also shown vulnerabilities this season, including issues with turnovers and dropped passes, which could impact their performance. Given these factors, while the Chiefs have a solid chance, they are not the clear favorites, leading to a probability of 45% for them winning the Super Bowl.",
+      "search_queries_used": [
+        "Kansas City Chiefs Super Bowl LVIII predictions 2023",
+        "Kansas City Chiefs recent performance analysis 2023",
+        "Super Bowl LVIII odds Kansas City Chiefs vs competitors 2023"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_029",
+      "question": "Will the Boston Celtics win the 2024 NBA Championship?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "The Boston Celtics have established themselves as the favorites to win the 2024 NBA Championship, with betting odds implying a probability of around 60% to 75%. They have performed exceptionally well throughout the season, clinching the number one seed in the Eastern Conference with a strong record of 58 wins and 16 losses. Despite the injury to Kristaps Porzingis, the team has shown resilience and depth, managing to advance to the NBA Finals. Their performance in the playoffs has been dominant, losing only two games, and they are now facing the Dallas Mavericks in the Finals. The Celtics' strong roster, playoff experience, and current form suggest a high likelihood of winning the championship.",
+      "search_queries_used": [
+        "Boston Celtics 2024 NBA Championship odds",
+        "Boston Celtics player injuries 2024 season",
+        "NBA expert predictions Boston Celtics championship 2024"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_030",
+      "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.85,
+      "brier_score": 0.022500000000000006,
+      "log_loss": 0.16251892949777494,
+      "reasoning": "Caitlin Clark is widely projected as the consensus No. 1 pick in the 2024 WNBA Draft, with multiple reputable sources confirming her status as a 'lock' for the top selection. The recent mock drafts indicate that her performance and accolades, including being the NCAA Division I all-time leading scorer, have solidified her position. Additionally, the injury to another top prospect, Elizabeth Kitley, further strengthens Clark's chances. However, there remains a small possibility of unexpected developments or decisions by teams that could affect the draft outcome.",
+      "search_queries_used": [
+        "Caitlin Clark 2024 WNBA Draft predictions",
+        "Caitlin Clark draft stock analysis October 2023",
+        "top prospects 2024 WNBA Draft rankings"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_031",
+      "question": "Will the Los Angeles Dodgers win the 2024 World Series?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Los Angeles Dodgers are currently among the favorites to win the 2024 World Series, with odds indicating a strong likelihood of success. They have a talented roster, bolstered by significant offseason acquisitions like Shohei Ohtani, and have consistently performed well in the regular season, leading to high expectations for their postseason performance. However, the unpredictability of playoff baseball and the presence of other strong contenders, such as the New York Yankees, means that while the Dodgers have a favorable chance, it is not guaranteed.",
+      "search_queries_used": [
+        "Los Angeles Dodgers 2024 World Series odds analysis",
+        "Los Angeles Dodgers 2024 roster changes impact on championship chances",
+        "2024 MLB season predictions Los Angeles Dodgers performance"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_032",
+      "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.48,
+      "brier_score": 0.2304,
+      "log_loss": 0.6539264674066639,
+      "reasoning": "The fight between Tyson Fury and Oleksandr Usyk is highly competitive, with both fighters being undefeated and possessing distinct advantages. Fury's size and experience give him a slight edge, as indicated by the betting odds favoring him slightly at -125 compared to Usyk's -105. However, Usyk's speed, agility, and tactical prowess make him a formidable opponent, and many analysts view the fight as a 50-50 matchup. Additionally, Usyk's recent performances, including a win over Daniel Dubois, bolster his credibility. Given these factors, the probability of Fury winning is close to even, reflecting the uncertainty surrounding the outcome.",
+      "search_queries_used": [
+        "Tyson Fury Oleksandr Usyk May 2024 fight prediction analysis",
+        "Tyson Fury Oleksandr Usyk fight betting odds May 2024",
+        "Tyson Fury Oleksandr Usyk fight training updates news October 2023"
+      ],
+      "num_results_used": 15
+    },
+    {
+      "question_id": "pm_033",
+      "question": "Will Inter Miami win MLS Cup 2024?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "exa",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "Inter Miami has had an outstanding season, winning the Supporters' Shield with a record-breaking 74 points and showcasing strong performances, particularly from star players like Lionel Messi. They are favored to win the MLS Cup, as indicated by expert predictions and betting odds. However, they face potential challenges in the playoffs, including a matchup against Atlanta United, who have performed well against them in the regular season. While their chances are strong, the unpredictability of playoff outcomes and the possibility of upsets in knockout formats suggest a probability of 75% for them winning the MLS Cup.",
+      "search_queries_used": [
+        "Inter Miami MLS Cup 2024 predictions",
+        "Inter Miami player performance 2024 season",
+        "MLS Cup 2024 betting odds Inter Miami"
+      ],
+      "num_results_used": 14
+    },
+    {
+      "question_id": "pm_001",
+      "question": "Will Donald Trump win the 2024 US presidential election?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of October 2024, Donald Trump has a strong base of support within the Republican Party and has been leading in several primary polls. However, there are significant challenges, including potential legal issues and the overall political landscape, which could impact his chances in the general election. The Democratic candidate, likely to be Joe Biden or another strong contender, also has considerable support. Given these factors, while Trump has a viable path to victory, the uncertainty surrounding voter turnout, swing states, and potential third-party candidates leads to a moderate probability of 45%.",
+      "search_queries_used": [
+        "Will Donald Trump win the 2024 US presidential election?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_002",
+      "question": "Will Joe Biden be the 2024 Democratic nominee?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of July 2024, Joe Biden is the incumbent president and has a strong position within the Democratic Party. While there are some concerns about his age and approval ratings, incumbents typically have an advantage in securing their party's nomination. Additionally, there has been limited significant opposition within the party, suggesting a high likelihood that he will be the nominee.",
+      "search_queries_used": [
+        "Will Joe Biden be the 2024 Democratic nominee?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_003",
+      "question": "Will Joe Biden pardon Hunter Biden?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of November 2024, Hunter Biden has faced legal challenges, and while there has been speculation about a potential pardon from his father, President Joe Biden, the political implications of such a decision are significant. A pardon could be seen as politically controversial and could alienate some voters. Additionally, the legal situation surrounding Hunter Biden is complex, and the timing of any potential pardon would likely be influenced by ongoing investigations and public opinion. Given these factors, a probability of 30% reflects a moderate chance of a pardon occurring.",
+      "search_queries_used": [
+        "Will Joe Biden pardon Hunter Biden?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_004",
+      "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 2024, Donald Trump is facing multiple legal challenges, including criminal trials. While there is significant evidence and legal scrutiny, the outcomes of such trials can be unpredictable due to various factors such as jury composition, legal strategies, and potential appeals. Given the political climate and Trump's previous legal defenses, a conviction is plausible but not guaranteed, leading to a moderate probability of 45%.",
+      "search_queries_used": [
+        "Will Donald Trump be convicted in a criminal trial in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_005",
+      "question": "Will the US Supreme Court uphold the TikTok ban?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2025, the legal landscape surrounding TikTok and its potential ban in the US is complex and contentious. There have been ongoing discussions about national security concerns related to data privacy and foreign influence, which have led to calls for a ban. However, there are also strong arguments regarding free speech and the economic implications of such a ban. The Supreme Court tends to weigh these factors carefully, and given the divided opinions on this issue, it is plausible that the Court may not fully uphold a ban. Therefore, while there is a significant chance that the ban could be upheld, there is also a substantial likelihood that it could be struck down, leading to a probability of around 45% for the Court upholding the ban.",
+      "search_queries_used": [
+        "Will the US Supreme Court uphold the TikTok ban?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_006",
+      "question": "Will the Republicans win control of the US Senate in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.55,
+      "brier_score": 0.20249999999999996,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of October 2024, the political landscape shows a competitive Senate race with several key states that could swing either way. Historical trends suggest that the party not holding the presidency often gains seats in midterm elections, but the dynamics of individual races, candidate popularity, and voter turnout will play significant roles. Given the current balance of power and the competitive nature of the races, there is a reasonable chance that Republicans could regain control, but it is not guaranteed.",
+      "search_queries_used": [
+        "Will the Republicans win control of the US Senate in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_007",
+      "question": "Will there be a US Supreme Court vacancy in 2024?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "As of December 2024, there are currently nine justices on the US Supreme Court, and while there is always a possibility of a vacancy due to retirement or health issues, the current justices have shown no immediate signs of leaving the bench. However, given the age of some justices, particularly those who are older, there is a reasonable chance that a vacancy could occur. Historical trends suggest that vacancies do happen, but predicting the exact timing is difficult. Therefore, a probability of 30% reflects a moderate likelihood of a vacancy occurring in 2024.",
+      "search_queries_used": [
+        "Will there be a US Supreme Court vacancy in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_008",
+      "question": "Will Sweden join NATO in 2024?",
+      "category": "geopolitics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of February 2024, Sweden has expressed strong interest in joining NATO, particularly in light of security concerns stemming from regional tensions. The Swedish government has taken significant steps towards membership, including applying formally and engaging in discussions with NATO member states. However, the process requires unanimous approval from all current NATO members, and there are still some political dynamics and negotiations that could affect the timeline. Given the current trajectory and commitment from Sweden, I estimate a 75% probability that Sweden will join NATO in 2024.",
+      "search_queries_used": [
+        "Will Sweden join NATO in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_009",
+      "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the conflict between Russia and Ukraine remains highly complex and influenced by various geopolitical factors. While there have been ongoing discussions and attempts at negotiations, significant obstacles such as territorial disputes, military engagements, and differing political objectives persist. The likelihood of a ceasefire agreement by the end of 2024 is hindered by these challenges, but there is a possibility that external pressures or changes in leadership could facilitate some form of agreement. Therefore, a probability of 35% reflects a cautious optimism amidst the prevailing uncertainties.",
+      "search_queries_used": [
+        "Will Russia and Ukraine agree to a ceasefire by end of 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_010",
+      "question": "Will China take military action against Taiwan in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, tensions between China and Taiwan remain high, with China asserting its claims over Taiwan and increasing military exercises in the region. However, there are significant factors that may deter immediate military action, including international diplomatic pressures, the potential for economic repercussions, and the military readiness of Taiwan and its allies. While the possibility of military action cannot be ruled out, the likelihood appears to be moderate rather than high, leading to an estimated probability of 35%.",
+      "search_queries_used": [
+        "Will China take military action against Taiwan in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_011",
+      "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the situation between Israel and Hamas remains complex and fraught with historical tensions, ongoing violence, and political challenges. While there have been temporary ceasefires and negotiations, the deep-rooted issues and lack of trust between the parties make a permanent ceasefire difficult to achieve. The international community continues to push for peace, but significant obstacles remain, leading to a moderate probability of a permanent ceasefire being reached by the end of 2024.",
+      "search_queries_used": [
+        "Will Israel and Hamas reach a permanent ceasefire by end of 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_012",
+      "question": "Will North Korea conduct a nuclear test in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, North Korea has shown a pattern of conducting nuclear tests in response to international sanctions and geopolitical tensions. The regime's leadership has emphasized the importance of its nuclear arsenal for national security. Given the ongoing tensions in the region, particularly with the United States and South Korea, there is a significant likelihood that North Korea may conduct a nuclear test in 2024 to assert its military capabilities and deter perceived threats. However, diplomatic efforts and international pressure could also influence their decision, leading to some uncertainty in the prediction.",
+      "search_queries_used": [
+        "Will North Korea conduct a nuclear test in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_013",
+      "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of December 2023, several Bitcoin spot ETF applications are under review by the SEC, with previous applications having been rejected or delayed. The regulatory environment remains cautious, and while there is growing institutional interest and pressure for approval, the SEC has historically been hesitant to approve such products due to concerns over market manipulation and investor protection. Given these factors, there is a reasonable chance of approval, but significant uncertainty remains, leading to a probability of 45%.",
+      "search_queries_used": [
+        "Will a Bitcoin spot ETF be approved by January 15, 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_014",
+      "question": "Will Bitcoin reach $100,000 by end of 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of November 2024, Bitcoin has shown significant volatility and has reached new highs and lows throughout the year. While there is a growing institutional interest and adoption of cryptocurrencies, macroeconomic factors such as inflation rates, regulatory developments, and market sentiment play crucial roles in Bitcoin's price movements. Given the historical patterns and the current market conditions, a probability of 35% reflects a cautious optimism that Bitcoin could reach $100,000 by the end of 2024, but acknowledges the substantial risks and uncertainties involved.",
+      "search_queries_used": [
+        "Will Bitcoin reach $100,000 by end of 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_015",
+      "question": "Will an Ethereum spot ETF be approved in 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 2024, there has been significant interest and ongoing discussions regarding the approval of an Ethereum spot ETF. However, regulatory bodies like the SEC have historically been cautious with cryptocurrency-related financial products. While there have been some positive signals and a growing acceptance of cryptocurrency in traditional finance, the approval of a spot ETF remains uncertain due to regulatory concerns and market volatility. Therefore, while there is a reasonable chance of approval, it is not guaranteed, leading to a probability of 0.45.",
+      "search_queries_used": [
+        "Will an Ethereum spot ETF be approved in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_016",
+      "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?",
+      "category": "crypto",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, Bitcoin's price has shown significant volatility, influenced by macroeconomic factors, regulatory developments, and market sentiment. Given the historical patterns of Bitcoin's price movements, there is a reasonable chance it could drop below $20,000 at some point in 2024, especially if negative news or economic conditions arise. However, the overall trend and potential for recovery also suggest that while a drop is plausible, it is not guaranteed, leading to a probability estimate of 65%.",
+      "search_queries_used": [
+        "Will Bitcoin's price drop below $20,000 at any point in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_017",
+      "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of September 2024, the Federal Reserve's monetary policy is influenced by various economic indicators, including inflation rates, employment data, and overall economic growth. Given the recent trends in inflation and the Fed's cautious approach to rate cuts, a 50 basis point cut seems aggressive unless there is a significant economic downturn. While there is a possibility of a rate cut, especially if economic conditions worsen, the likelihood of a substantial cut like 50 basis points is relatively low, leading to an estimated probability of 30%.",
+      "search_queries_used": [
+        "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_018",
+      "question": "Will the Federal Reserve cut interest rates before July 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of June 2024, the Federal Reserve has been closely monitoring inflation and economic growth. While there have been signs of easing inflation, the Fed's decision to cut interest rates will depend on various economic indicators in the coming months. Given the uncertainty surrounding economic conditions and the Fed's cautious approach, there is a moderate chance of a rate cut before July 2024, but it is not guaranteed.",
+      "search_queries_used": [
+        "Will the Federal Reserve cut interest rates before July 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_019",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2024, the S&P 500 is influenced by various factors including economic indicators, interest rates, corporate earnings, and geopolitical events. While the index has shown resilience and potential for growth, there are concerns about inflation, potential recessions, and market volatility. Given these mixed signals, a probability of 45% reflects a cautious optimism about the index closing above 5,000, acknowledging both the potential for upward movement and the risks that could impede such growth.",
+      "search_queries_used": [
+        "Will the S&P 500 close above 5,000 in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_020",
+      "question": "Will the US economy enter a recession in 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of December 2024, various economic indicators suggest a mixed outlook for the US economy. While some sectors show resilience, concerns about inflation, interest rates, and potential global economic slowdowns could lead to a recession. The Federal Reserve's monetary policy and its impact on consumer spending and business investment are critical factors. Given the uncertainty and the potential for economic headwinds, a probability of 45% reflects a significant chance of recession, but also acknowledges the possibility of continued growth.",
+      "search_queries_used": [
+        "Will the US economy enter a recession in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_021",
+      "question": "Will OpenAI release GPT-5 by end of 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, OpenAI has a history of releasing new models and iterating on their technology. Given the advancements in AI and the competitive landscape, it is plausible that OpenAI would aim to release GPT-5 by the end of 2024. However, there are also considerations such as the need for thorough testing, ethical implications, and potential regulatory hurdles that could delay the release. Therefore, while there is a strong likelihood of a release, it is not guaranteed, leading to a moderate probability estimate.",
+      "search_queries_used": [
+        "Will OpenAI release GPT-5 by end of 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_022",
+      "question": "Will Apple release the Vision Pro in Q1 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of January 2024, Apple has announced the Vision Pro and indicated plans for a release in early 2024. Given the company's track record of meeting product launch timelines and the significant anticipation surrounding this product, there is a strong likelihood that they will adhere to their schedule and release it in Q1 2024. However, there is always a small risk of delays due to unforeseen circumstances, which is why the probability is not higher.",
+      "search_queries_used": [
+        "Will Apple release the Vision Pro in Q1 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_023",
+      "question": "Will Neuralink implant a brain chip in a human in 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of January 2024, Neuralink has made significant progress in developing brain-computer interface technology and has conducted animal trials. However, regulatory approval for human trials is a complex process that involves rigorous safety and ethical considerations. While there is optimism within the company and among supporters about the potential for human trials in 2024, the actual timeline can be unpredictable due to these regulatory hurdles. Therefore, while there is a reasonable chance that they could implant a brain chip in a human in 2024, it is not guaranteed.",
+      "search_queries_used": [
+        "Will Neuralink implant a brain chip in a human in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_024",
+      "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "As of December 2024, Tesla has made significant advancements in autonomous driving technology, but fully autonomous robotaxis have not yet been deployed commercially. Regulatory hurdles, safety concerns, and the need for extensive testing remain significant challenges. While Tesla has ambitious goals and a strong track record of innovation, the timeline for a fully autonomous robotaxi launch in 2024 seems optimistic given the current state of technology and regulatory environment.",
+      "search_queries_used": [
+        "Will Tesla begin selling a fully autonomous robotaxi in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_025",
+      "question": "Will NASA's Artemis II mission launch in 2024?",
+      "category": "science",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of December 2024, NASA's Artemis II mission is in the advanced stages of preparation, with significant progress made in testing and development. The mission aims to send astronauts around the Moon, and while there are always risks and potential delays in space missions, the timeline appears to be on track for a launch in 2024. Given the historical context of NASA's Artemis program and the current status of Artemis II, I estimate a 75% probability that the mission will launch as planned in 2024.",
+      "search_queries_used": [
+        "Will NASA's Artemis II mission launch in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_026",
+      "question": "Will there be a successful commercial Moon landing in early 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of February 2024, several companies and space agencies are actively working on lunar missions, but the timeline for successful commercial Moon landings has historically been optimistic. While there are plans from companies like SpaceX and others, the complexities of space missions, potential delays, and the need for rigorous testing suggest that a successful commercial Moon landing in early 2024 is uncertain. Therefore, I estimate a moderate probability of 35%.",
+      "search_queries_used": [
+        "Will there be a successful commercial Moon landing in early 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_027",
+      "question": "Will Boeing Starliner complete a crewed launch in 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of May 2024, Boeing has made significant progress with the Starliner program, including successful uncrewed test flights. However, the timeline for a crewed launch has faced delays due to technical challenges and regulatory scrutiny. While there is optimism about completing a crewed launch in 2024, uncertainties remain regarding final testing and certification processes. Therefore, I estimate a moderate probability of 65% for a successful crewed launch in 2024.",
+      "search_queries_used": [
+        "Will Boeing Starliner complete a crewed launch in 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_028",
+      "question": "Will the Kansas City Chiefs win Super Bowl LVIII?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Kansas City Chiefs have been a strong team in recent seasons, including winning Super Bowl LVII. They have a talented roster led by a top quarterback, Patrick Mahomes, and a solid coaching staff. As of January 2024, they are considered one of the favorites to win the Super Bowl again. However, the competition in the NFL is fierce, with several other strong teams also vying for the title, which introduces some uncertainty. Therefore, while the Chiefs have a good chance, it's not guaranteed.",
+      "search_queries_used": [
+        "Will the Kansas City Chiefs win Super Bowl LVIII?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_029",
+      "question": "Will the Boston Celtics win the 2024 NBA Championship?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of June 2024, the Boston Celtics have been a strong contender in the NBA, consistently performing well in the regular season and playoffs. They have a talented roster, including key players who have shown the ability to perform in high-pressure situations. However, the competition in the NBA is fierce, with other strong teams also vying for the championship. Factors such as injuries, matchups in the playoffs, and the performance of rival teams will play a significant role in determining the outcome. Given these considerations, a probability of 0.45 reflects a reasonable chance of the Celtics winning the championship.",
+      "search_queries_used": [
+        "Will the Boston Celtics win the 2024 NBA Championship?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_030",
+      "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Caitlin Clark has been a standout player in college basketball, known for her scoring ability and playmaking skills. As of April 2024, she is widely regarded as one of the top prospects for the WNBA Draft. While there are other strong candidates, Clark's performance in the NCAA tournament and her overall skill set make her a frontrunner for the #1 pick. However, the final decision will depend on team needs and preferences, which introduces some uncertainty.",
+      "search_queries_used": [
+        "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_031",
+      "question": "Will the Los Angeles Dodgers win the 2024 World Series?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Los Angeles Dodgers have consistently been one of the strongest teams in Major League Baseball over the past few seasons, with a solid roster and strong management. They have made deep playoff runs and have a history of success in the postseason. However, the unpredictability of the playoffs and the competitiveness of other teams, such as the Atlanta Braves and Houston Astros, means that while the Dodgers are favorites, there are significant challenges ahead. Thus, a probability of 0.65 reflects their strong chances while acknowledging the inherent uncertainties of the postseason.",
+      "search_queries_used": [
+        "Will the Los Angeles Dodgers win the 2024 World Series?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_032",
+      "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.55,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177717,
+      "reasoning": "As of May 2024, Tyson Fury is widely regarded as one of the top heavyweights, known for his size, skill, and experience. Oleksandr Usyk, while an accomplished boxer and former undisputed cruiserweight champion, has faced challenges in the heavyweight division against larger opponents. The fight is expected to be competitive, but Fury's advantages in size and reach, combined with his recent performances, suggest he has a slight edge. Therefore, I estimate a 55% probability that Fury will win.",
+      "search_queries_used": [
+        "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_033",
+      "question": "Will Inter Miami win MLS Cup 2024?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "single",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "Inter Miami has shown significant improvement since the arrival of high-profile players, including Lionel Messi. Their performance in the 2023 season and the early part of the 2024 season suggests they have the potential to compete for the MLS Cup. However, the competition in MLS is strong, with several other teams also having strong rosters and good form. Given these factors, a probability of 45% reflects a reasonable chance of Inter Miami winning the MLS Cup.",
+      "search_queries_used": [
+        "Will Inter Miami win MLS Cup 2024?"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_001",
+      "question": "Will Donald Trump win the 2024 US presidential election?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of October 2024, Donald Trump has a strong base of support within the Republican Party and has been leading in many primary polls. However, there are significant challenges, including potential legal issues and the general election matchup against a Democratic candidate, likely Joe Biden, who has incumbency advantages. The political landscape is highly polarized, and while Trump has a solid chance, the outcome remains uncertain due to various factors such as voter turnout, swing state dynamics, and potential third-party candidates.",
+      "search_queries_used": [
+        "Donald Trump 2024 presidential election polls October 2023",
+        "Donald Trump 2024 election campaign challenges and controversies",
+        "2024 US presidential election predictions Trump vs Biden analysis"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_002",
+      "question": "Will Joe Biden be the 2024 Democratic nominee?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of July 2024, Joe Biden is the incumbent president and has a significant advantage in the Democratic primary due to his established position and party support. While there are some concerns about his age and approval ratings, incumbents typically have a strong chance of securing their party's nomination. Additionally, there have been no major challengers emerging that pose a serious threat to his candidacy. Therefore, the probability of him being the 2024 Democratic nominee is reasonably high.",
+      "search_queries_used": [
+        "Joe Biden 2024 Democratic nominee polls October 2023",
+        "Joe Biden challengers 2024 Democratic primary news",
+        "Democratic Party support for Joe Biden 2024 election analysis"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_003",
+      "question": "Will Joe Biden pardon Hunter Biden?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of November 2024, Hunter Biden is facing legal challenges, and while there has been speculation about a potential pardon from President Joe Biden, such a decision would be politically sensitive and controversial. Given the current political climate, including ongoing investigations and public opinion, it seems unlikely that a pardon would be granted. However, there remains a possibility that Biden could choose to pardon his son to mitigate legal repercussions and political fallout, hence a probability of 30% reflects this uncertainty.",
+      "search_queries_used": [
+        "Joe Biden Hunter Biden pardon news October 2023",
+        "Hunter Biden legal issues Biden administration response",
+        "public opinion Joe Biden pardon Hunter Biden"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_004",
+      "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 2024, Donald Trump is facing multiple legal challenges, including criminal trials. While there is significant evidence and legal scrutiny, the outcomes of such trials can be unpredictable due to various factors, including jury decisions, legal strategies, and potential appeals. Given the polarized political environment and Trump's previous legal defenses, there is a substantial chance of conviction, but also a considerable chance of acquittal or mistrial. Therefore, a probability of 45% reflects a balanced view of the uncertainties involved.",
+      "search_queries_used": [
+        "Donald Trump criminal trial 2024 conviction news",
+        "Donald Trump legal defense strategy 2024",
+        "expert opinions on Donald Trump trial outcomes 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_005",
+      "question": "Will the US Supreme Court uphold the TikTok ban?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2025, the legal landscape surrounding the TikTok ban is complex, with ongoing debates about national security, user privacy, and First Amendment rights. While there is significant political pressure to restrict TikTok due to concerns over data security and potential foreign influence, the Supreme Court has historically been cautious about upholding bans that may infringe on free speech. Given the divided opinions among lower courts and the potential for public backlash, there is a reasonable chance that the Supreme Court may not uphold the ban, leading to a probability of 0.45 for the ban being upheld.",
+      "search_queries_used": [
+        "US Supreme Court TikTok ban decision news 2023",
+        "arguments against TikTok ban Supreme Court 2023",
+        "legal analysis TikTok ban Supreme Court ruling implications 2023"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_006",
+      "question": "Will the Republicans win control of the US Senate in 2024?",
+      "category": "politics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.55,
+      "brier_score": 0.20249999999999996,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of October 2024, the political landscape shows a competitive Senate race with several key battleground states. Historical trends suggest that the party not holding the presidency often gains seats in midterm elections, but the specific dynamics of the 2024 election, including candidate popularity and voter turnout, are crucial. Given the Republicans' strong base and potential advantages in certain states, there is a reasonable chance they could regain control, but it remains uncertain due to the competitive nature of the races.",
+      "search_queries_used": [
+        "Republicans control US Senate 2024 election predictions",
+        "2024 Senate races Republican candidates polls",
+        "historical trends Republican Senate control elections"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_007",
+      "question": "Will there be a US Supreme Court vacancy in 2024?",
+      "category": "politics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of December 2024, there are currently nine justices on the US Supreme Court, with several justices being of an age where retirement could be considered. However, there has been no official announcement of any impending retirements or vacancies. Given the unpredictability of health and personal decisions regarding retirement, as well as the political implications of a vacancy, I estimate a moderate probability of 45% for a vacancy occurring in 2024.",
+      "search_queries_used": [
+        "2024 US Supreme Court vacancy news",
+        "current Supreme Court justices health and retirement plans 2024",
+        "historical trends Supreme Court vacancies election years"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_008",
+      "question": "Will Sweden join NATO in 2024?",
+      "category": "geopolitics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of February 2024, Sweden has expressed strong interest in joining NATO, particularly in light of security concerns stemming from geopolitical tensions in Europe. The Swedish government has taken significant steps towards membership, including applying for NATO membership alongside Finland in 2022. While Finland successfully joined NATO in April 2023, Sweden's accession has faced some delays, primarily due to objections from Turkey regarding Sweden's stance on Kurdish groups and arms exports. However, diplomatic negotiations have been ongoing, and there is a strong political will within Sweden to finalize its NATO membership. Given the current trajectory and the importance of collective security in the region, I estimate a 75% probability that Sweden will join NATO in 2024.",
+      "search_queries_used": [
+        "Sweden NATO membership 2024 news",
+        "Sweden NATO accession opposition 2024",
+        "Sweden NATO membership public opinion 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_009",
+      "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the conflict between Russia and Ukraine remains highly complex and influenced by various geopolitical factors. While there have been ongoing discussions and attempts at negotiations, significant distrust and differing objectives persist on both sides. The likelihood of a ceasefire agreement by the end of 2024 is hindered by military engagements, territorial disputes, and external influences from other nations. Therefore, while a ceasefire is possible, the probability remains relatively low given the current state of affairs.",
+      "search_queries_used": [
+        "Russia Ukraine ceasefire negotiations news October 2023",
+        "Russia Ukraine ceasefire obstacles challenges analysis 2023",
+        "international responses to Russia Ukraine ceasefire talks 2023"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_010",
+      "question": "Will China take military action against Taiwan in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, tensions between China and Taiwan remain high, with China continuing to assert its claims over Taiwan and conducting military exercises in the region. However, there are significant factors that may deter immediate military action, including international diplomatic pressure, the potential for economic repercussions, and the strategic calculations of both the Chinese and Taiwanese governments. While the possibility of military action cannot be ruled out, especially given the historical context, the likelihood appears to be moderate rather than high, leading to an estimated probability of 35%.",
+      "search_queries_used": [
+        "China Taiwan military action 2024 news",
+        "Taiwan defense strategies against China 2024",
+        "international response to China Taiwan tensions 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_011",
+      "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of December 2024, the conflict between Israel and Hamas remains deeply entrenched, with historical animosities and ongoing violence complicating the prospects for a permanent ceasefire. While there have been temporary ceasefires and negotiations, the underlying issues such as territorial disputes, security concerns, and political divisions continue to pose significant barriers. The international community has been involved in mediation efforts, but achieving a lasting resolution by the end of 2024 appears challenging given the current dynamics and lack of trust between the parties.",
+      "search_queries_used": [
+        "Israel Hamas ceasefire negotiations 2024 news",
+        "Israel Hamas conflict ceasefire obstacles 2024",
+        "Israel Hamas peace talks progress 2023 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_012",
+      "question": "Will North Korea conduct a nuclear test in 2024?",
+      "category": "geopolitics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "North Korea has a history of conducting nuclear tests, particularly when it seeks to assert its power or respond to international pressures. As of late 2023, there were indications that North Korea was continuing to develop its nuclear capabilities, and the geopolitical climate, including tensions with the United States and South Korea, could prompt further tests. However, there is also a possibility that North Korea might choose to refrain from testing to avoid additional sanctions or diplomatic isolation. Given these factors, a probability of 0.65 reflects a significant likelihood of a nuclear test occurring in 2024.",
+      "search_queries_used": [
+        "North Korea nuclear test predictions 2024",
+        "North Korea nuclear test news October 2023",
+        "international response North Korea nuclear test likelihood 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_013",
+      "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of December 2023, there has been significant interest and anticipation surrounding Bitcoin spot ETFs, with multiple applications submitted to the SEC. However, the SEC has historically been cautious regarding cryptocurrency-related financial products, often citing concerns over market manipulation and investor protection. While there is a growing sentiment that approval may be forthcoming due to increased regulatory clarity and market maturity, the timeline remains uncertain. Therefore, a probability of 45% reflects a moderate chance of approval by January 15, 2024, acknowledging both the potential for approval and the regulatory hurdles that still exist.",
+      "search_queries_used": [
+        "Bitcoin spot ETF approval news October 2023",
+        "regulatory challenges Bitcoin ETF approval January 2024",
+        "expert opinions Bitcoin ETF likelihood approval 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_014",
+      "question": "Will Bitcoin reach $100,000 by end of 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of November 2024, Bitcoin has shown significant volatility and has experienced both bullish and bearish trends throughout the year. Factors such as regulatory developments, macroeconomic conditions, and market sentiment play crucial roles in Bitcoin's price movements. While there is potential for Bitcoin to reach $100,000, especially if there is a strong rally driven by institutional adoption or favorable regulations, the overall market conditions and historical price patterns suggest that a 35% probability is a reasonable estimate for this outcome.",
+      "search_queries_used": [
+        "Bitcoin price prediction 2024 $100,000 news",
+        "Bitcoin market analysis October 2023",
+        "expert opinions Bitcoin reaching $100,000 by 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_015",
+      "question": "Will an Ethereum spot ETF be approved in 2024?",
+      "category": "crypto",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of May 2024, there has been significant interest and ongoing discussions regarding the approval of an Ethereum spot ETF. However, regulatory bodies like the SEC have historically been cautious about approving cryptocurrency-related ETFs due to concerns over market manipulation and investor protection. While there have been some positive signals and a growing acceptance of cryptocurrency in traditional finance, the uncertainty surrounding regulatory decisions means that the probability of approval remains moderate. Therefore, I estimate a 45% chance that an Ethereum spot ETF will be approved in 2024.",
+      "search_queries_used": [
+        "Ethereum spot ETF approval news 2024",
+        "Ethereum ETF regulatory challenges 2024",
+        "expert opinions Ethereum spot ETF approval 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_016",
+      "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?",
+      "category": "crypto",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, Bitcoin's price has shown significant volatility, influenced by macroeconomic factors, regulatory developments, and market sentiment. Given the historical patterns of Bitcoin's price movements and the potential for economic downturns or negative news impacting investor confidence, there is a reasonable chance that Bitcoin could drop below $20,000 at some point in 2024. However, the overall trend in 2024 has been somewhat positive, which mitigates the likelihood of a sustained drop below this threshold.",
+      "search_queries_used": [
+        "Bitcoin price prediction 2024 analysis",
+        "Bitcoin market trends October 2023",
+        "impact of economic factors on Bitcoin price 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_017",
+      "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.3,
+      "brier_score": 0.48999999999999994,
+      "log_loss": 1.2039728043259361,
+      "reasoning": "As of September 2024, the Federal Reserve's stance on interest rates is influenced by various economic indicators such as inflation, employment rates, and overall economic growth. Given that inflation rates have been a concern throughout 2023 and into 2024, the Fed may be cautious about making significant cuts to interest rates. A 50 basis point cut would be considered a substantial move, typically reserved for more severe economic downturns or significant shifts in economic conditions. While there is a possibility of a cut if economic indicators suggest a need for stimulus, the likelihood of a 50 basis point cut specifically is lower, leading to a probability estimate of 30%.",
+      "search_queries_used": [
+        "Federal Reserve interest rate cut September 2024 news",
+        "economic indicators predicting Federal Reserve interest rate changes 2024",
+        "analysts opinions Federal Reserve interest rate decision September 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_018",
+      "question": "Will the Federal Reserve cut interest rates before July 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of mid-June 2024, the Federal Reserve has been closely monitoring inflation and economic growth. While there are signs of slowing inflation, the overall economic conditions remain uncertain. The Fed's recent statements indicate a cautious approach to interest rate cuts, suggesting they may prefer to maintain rates until they are more confident about the economic outlook. Given these factors, there is a reasonable chance (around 45%) that they could cut rates before July 2024, but it is not a certainty.",
+      "search_queries_used": [
+        "Federal Reserve interest rate cut predictions 2024",
+        "impact of inflation on Federal Reserve interest rate decisions 2024",
+        "recent statements from Federal Reserve officials on interest rates July 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_019",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "category": "economics",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "As of January 2024, the S&P 500 has shown volatility and uncertainty due to various economic factors, including inflation rates, interest rate policies, and geopolitical tensions. While there is potential for growth, especially if corporate earnings remain strong and economic conditions improve, there are also significant risks that could prevent the index from reaching or exceeding 5,000. Given these mixed signals, a probability of 45% reflects a cautious optimism balanced with the inherent risks in the market.",
+      "search_queries_used": [
+        "S&P 500 forecast 2024 closing predictions",
+        "factors affecting S&P 500 performance 2024",
+        "historical trends S&P 500 closing prices analysis"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_020",
+      "question": "Will the US economy enter a recession in 2024?",
+      "category": "economics",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "As of December 2024, various economic indicators suggest a mixed outlook for the US economy. While some sectors show resilience, concerns about inflation, interest rates, and global economic conditions could lead to a slowdown. The Federal Reserve's monetary policy decisions and their impact on consumer spending and business investment will be crucial. Given these uncertainties, a probability of 45% reflects a significant chance of recession, but also acknowledges the possibility of continued growth.",
+      "search_queries_used": [
+        "US economy recession predictions 2024",
+        "current economic indicators US 2024 recession",
+        "expert opinions on US recession likelihood 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_021",
+      "question": "Will OpenAI release GPT-5 by end of 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of December 2024, OpenAI has a history of releasing new models and updates to their AI systems, with GPT-4 being released in March 2023. Given the rapid advancements in AI and the competitive landscape, it is plausible that OpenAI would aim to release GPT-5 by the end of 2024. However, the timeline for such releases can be influenced by various factors including research breakthroughs, safety considerations, and market readiness. Therefore, while there is a strong likelihood of a release, uncertainties remain, leading to a probability of 0.65.",
+      "search_queries_used": [
+        "OpenAI GPT-5 release date news 2024",
+        "OpenAI announcements GPT-5 development progress",
+        "expert opinions on OpenAI GPT-5 release timeline"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_022",
+      "question": "Will Apple release the Vision Pro in Q1 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "As of January 2024, Apple has announced the Vision Pro and indicated a release timeframe for early 2024. Given the company's history of meeting product launch timelines and the significant anticipation surrounding this product, there is a strong likelihood that they will release it in Q1 2024. However, there is always a possibility of delays in product launches due to unforeseen circumstances, which is why the probability is not higher.",
+      "search_queries_used": [
+        "Apple Vision Pro release date Q1 2024 news",
+        "Apple Vision Pro production delays 2024",
+        "analysts predictions Apple Vision Pro launch 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_023",
+      "question": "Will Neuralink implant a brain chip in a human in 2024?",
+      "category": "tech",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of January 2024, Neuralink has made significant progress in developing brain-computer interface technology and has conducted animal trials. However, the transition to human trials involves regulatory approvals and ethical considerations, which can be unpredictable. While there is a strong possibility that they will initiate human trials in 2024, the exact timing and success of such an endeavor remain uncertain. Therefore, a probability of 0.65 reflects a favorable outlook while acknowledging the challenges ahead.",
+      "search_queries_used": [
+        "Neuralink brain chip human trials 2024 news",
+        "Neuralink FDA approval status 2024",
+        "Neuralink ethical concerns brain chip implantation 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_024",
+      "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?",
+      "category": "tech",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.3,
+      "brier_score": 0.09,
+      "log_loss": 0.35667494393873245,
+      "reasoning": "As of December 2024, Tesla has made significant advancements in autonomous driving technology, but fully autonomous robotaxis have not yet been deployed commercially. Regulatory hurdles, safety concerns, and the need for extensive testing remain significant challenges. While Tesla has ambitious plans and has made progress, the timeline for a fully autonomous robotaxi in 2024 appears optimistic given the current state of technology and regulation.",
+      "search_queries_used": [
+        "Tesla robotaxi 2024 news",
+        "Tesla autonomous vehicle regulatory updates 2024",
+        "Tesla robotaxi development challenges 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_025",
+      "question": "Will NASA's Artemis II mission launch in 2024?",
+      "category": "science",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.5625,
+      "log_loss": 1.3862943611198906,
+      "reasoning": "As of December 2024, NASA's Artemis II mission has been in development with significant progress made towards its launch. The mission is intended to be the first crewed flight of the Orion spacecraft, and while there have been delays in the Artemis program, the timeline for Artemis II has been set for 2024. Given the advancements in testing and the completion of Artemis I, there is a strong likelihood that Artemis II will launch as planned, though some uncertainty remains due to potential technical challenges or scheduling issues.",
+      "search_queries_used": [
+        "NASA Artemis II mission launch schedule 2024 updates",
+        "Artemis II mission delays news 2024",
+        "NASA Artemis II mission launch readiness status 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_026",
+      "question": "Will there be a successful commercial Moon landing in early 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.35,
+      "brier_score": 0.42250000000000004,
+      "log_loss": 1.0498221244986778,
+      "reasoning": "As of February 2024, several companies are actively working on commercial lunar landers, with some aiming for launches in early 2024. However, the technical challenges and regulatory hurdles associated with lunar landings are significant. Previous attempts by various entities have faced delays and complications. While there is optimism in the commercial space sector, the probability of a successful landing in the specified timeframe remains uncertain, leading to a moderate probability estimate.",
+      "search_queries_used": [
+        "successful commercial Moon landing plans 2024",
+        "challenges facing commercial Moon landings 2024",
+        "recent news on Moon landing missions 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_027",
+      "question": "Will Boeing Starliner complete a crewed launch in 2024?",
+      "category": "science",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "As of May 2024, Boeing has made significant progress with the Starliner program, including successful uncrewed test flights and addressing previous technical issues. However, there are still uncertainties related to regulatory approvals and potential delays in the final preparations for a crewed launch. Given the advancements and the urgency to complete the program, I estimate a 65% probability that a crewed launch will occur in 2024.",
+      "search_queries_used": [
+        "Boeing Starliner crewed launch 2024 news",
+        "Boeing Starliner delays issues crewed launch 2024",
+        "NASA Boeing Starliner updates crewed mission timeline 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_028",
+      "question": "Will the Kansas City Chiefs win Super Bowl LVIII?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Kansas City Chiefs have been a strong team in recent NFL seasons, including winning Super Bowl LVII. They have a talented roster led by star quarterback Patrick Mahomes and a solid coaching staff. As of January 2024, they are considered one of the top contenders for Super Bowl LVIII, with a strong regular season performance and playoff potential. However, the NFL is unpredictable, and other teams also have strong rosters and could pose significant challenges. Therefore, while the Chiefs have a good chance, there are uncertainties that prevent a higher probability.",
+      "search_queries_used": [
+        "Kansas City Chiefs Super Bowl LVIII predictions 2023",
+        "Kansas City Chiefs recent performance analysis 2023",
+        "Super Bowl LVIII betting odds Kansas City Chiefs 2023"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_029",
+      "question": "Will the Boston Celtics win the 2024 NBA Championship?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177716,
+      "reasoning": "The Boston Celtics have a strong roster and have been competitive in recent seasons, making them one of the favorites to win the NBA Championship. However, the NBA is highly competitive, and factors such as injuries, performance of other teams, and playoff dynamics can significantly influence the outcome. Given their current standing and potential, a probability of 0.45 reflects a reasonable chance of winning, while acknowledging the uncertainty inherent in sports outcomes.",
+      "search_queries_used": [
+        "Boston Celtics 2024 NBA Championship odds",
+        "Boston Celtics player injuries 2024 season",
+        "NBA expert predictions Boston Celtics championship 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_030",
+      "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.75,
+      "brier_score": 0.0625,
+      "log_loss": 0.2876820724517809,
+      "reasoning": "Caitlin Clark has been widely regarded as one of the top prospects for the 2024 WNBA Draft due to her exceptional performance in college basketball, including leading her team to significant victories and earning numerous accolades. Her skill set, including scoring ability, playmaking, and leadership, makes her a strong candidate for the #1 pick. However, the final decision will depend on team needs and other potential candidates, which introduces some uncertainty. Given her current standing and the general consensus among analysts, I estimate a 75% probability that she will be the #1 pick.",
+      "search_queries_used": [
+        "Caitlin Clark 2024 WNBA Draft predictions",
+        "Caitlin Clark draft prospects analysis 2024",
+        "2024 WNBA Draft player rankings Caitlin Clark"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_031",
+      "question": "Will the Los Angeles Dodgers win the 2024 World Series?",
+      "category": "sports",
+      "resolution": true,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.65,
+      "brier_score": 0.12249999999999998,
+      "log_loss": 0.4307829160924542,
+      "reasoning": "The Los Angeles Dodgers have consistently been one of the strongest teams in Major League Baseball over the past few seasons, with a solid roster and strong management. They have made deep playoff runs and have a history of success in the postseason. However, the unpredictability of the playoffs and the strength of other contenders, such as the Atlanta Braves and Houston Astros, could impact their chances. Given their recent performance and overall team strength, I estimate a 65% probability that they will win the 2024 World Series.",
+      "search_queries_used": [
+        "Los Angeles Dodgers 2024 World Series odds predictions",
+        "Los Angeles Dodgers 2024 roster analysis and injury reports",
+        "2024 MLB playoff predictions and expert opinions on Dodgers performance"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_032",
+      "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.55,
+      "brier_score": 0.30250000000000005,
+      "log_loss": 0.7985076962177717,
+      "reasoning": "As of May 2024, Tyson Fury is widely regarded as one of the top heavyweights, known for his size, skill, and experience in the ring. Oleksandr Usyk, while an exceptional boxer and technically skilled, is moving up in weight class and facing a much larger opponent in Fury. The fight is expected to be competitive, but Fury's advantages in size and reach, along with his recent performances, suggest he has a slightly better chance of winning. Therefore, I estimate a probability of 55% that Fury will win.",
+      "search_queries_used": [
+        "Tyson Fury vs Oleksandr Usyk May 2024 fight analysis",
+        "Tyson Fury Oleksandr Usyk fight predictions expert opinions",
+        "Tyson Fury Oleksandr Usyk fight betting odds May 2024"
+      ],
+      "num_results_used": 0
+    },
+    {
+      "question_id": "pm_033",
+      "question": "Will Inter Miami win MLS Cup 2024?",
+      "category": "sports",
+      "resolution": false,
+      "provider": "tavily",
+      "mode": "agentic",
+      "predicted_probability": 0.45,
+      "brier_score": 0.2025,
+      "log_loss": 0.5978370007556204,
+      "reasoning": "Inter Miami has shown significant improvement since the arrival of high-profile players, including Lionel Messi. Their performance in the 2023 season and the early part of the 2024 season indicates they have the potential to be strong contenders for the MLS Cup. However, the competition in MLS is fierce, with several other teams also having strong rosters and good form. Given these factors, a probability of 45% reflects a reasonable chance of Inter Miami winning the MLS Cup in 2024.",
+      "search_queries_used": [
+        "Inter Miami MLS Cup 2024 predictions",
+        "Inter Miami player performance 2024 season",
+        "MLS Cup 2024 odds Inter Miami"
+      ],
+      "num_results_used": 0
+    }
+  ]
+}
