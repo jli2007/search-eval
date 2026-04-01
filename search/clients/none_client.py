@@ -8,5 +8,5 @@ class NoneClient:
     def name(self) -> str:
         return "none"
 
-    def search(self, query: str, num_results: int = 10) -> list[SearchResult]:
+    def search(self, query: str, num_results: int = 10, before_date: str | None = None) -> list[SearchResult]:
         return []

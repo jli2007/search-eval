@@ -17,14 +17,17 @@ class ExaClient:
     def name(self) -> str:
         return "exa"
 
-    def search(self, query: str, num_results: int = 10) -> list[SearchResult]:
+    def search(self, query: str, num_results: int = 10, before_date: str | None = None) -> list[SearchResult]:
         try:
-            response = self.client.search_and_contents(
-                query,
+            kwargs = dict(
                 type="auto",
                 num_results=num_results,
                 highlights={"max_characters": 4000},
             )
+            # Filter to content published before the resolution date
+            if before_date:
+                kwargs["end_published_date"] = before_date
+            response = self.client.search_and_contents(query, **kwargs)
         except Exception as e:
             logger.warning(f"Exa search failed: {e}")
             return []
