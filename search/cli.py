@@ -9,9 +9,11 @@ from pathlib import Path
 from search.config import config
 from search.clients.exa_client import ExaClient
 from search.clients.none_client import NoneClient
+from search.clients.tavily_client import TavilyClient
 from search.llm.openai_llm import OpenAILLM
 from search.eval.runner import load_questions, run_eval
 from search.eval.scorer import ProviderResult, compute_uplift, confidence_weighted_analysis
+from search.eval.visualize import plot_all
 
 
 # ANSI color helpers
@@ -32,6 +34,8 @@ def colored(text: str, color: str) -> str:
 def make_client(provider: str):
     if provider == "exa":
         return ExaClient(api_key=config.exa_api_key)
+    elif provider == "tavily":
+        return TavilyClient(api_key=config.tavily_api_key)
     elif provider == "none":
         return NoneClient()
     else:
@@ -152,8 +156,8 @@ def save_results(all_results: list[ProviderResult], output_dir: str):
 
 def main():
     parser = argparse.ArgumentParser(description="PredSearch — Prediction Market Search Benchmark")
-    parser.add_argument("--providers", nargs="+", default=["none", "exa"])
-    parser.add_argument("--modes", nargs="+", default=["no_search", "single"])
+    parser.add_argument("--providers", nargs="+", default=["none", "exa", "tavily"])
+    parser.add_argument("--modes", nargs="+", default=["no_search", "single", "agentic"])
     parser.add_argument("--questions", default="search/datasets/questions.jsonl")
     parser.add_argument("--output", default="search/results")
     parser.add_argument("--model", default="gpt-4o-mini")
@@ -191,6 +195,9 @@ def main():
 
     print_results(all_results)
     save_results(all_results, args.output)
+
+    print(colored("\nGenerating charts...", C.DIM))
+    plot_all(all_results, args.output)
 
 
 if __name__ == "__main__":
