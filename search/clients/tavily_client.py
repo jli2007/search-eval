@@ -48,14 +48,16 @@ class TavilyClient:
 
         results = []
         for r in data.get("results", []):
-            # Basic date filtering if published_date available
-            if cutoff and r.get("published_date"):
+            if cutoff:
+                pub_str = r.get("published_date")
+                if not pub_str:
+                    continue  # skip articles with no date when filtering is active
                 try:
-                    pub = datetime.fromisoformat(r["published_date"].replace("Z", "+00:00"))
+                    pub = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
                     if pub.replace(tzinfo=None) > cutoff:
                         continue
                 except (ValueError, TypeError):
-                    pass
+                    continue  # skip articles with unparseable dates
 
             results.append(
                 SearchResult(

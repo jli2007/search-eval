@@ -20,6 +20,13 @@ the pipeline:
 same llm, same prompts, same questions. only the search api changes.
 any difference in score is purely from search quality.
 
+date filtering is critical to this eval — without it the llm just reads a headline confirming the
+outcome. exa has native date filtering via end_published_date, so the api itself only returns
+articles before the cutoff. tavily doesn't support this, so we have to fetch results and filter
+client-side, which is lossy and means some post-resolution content can slip through if the
+metadata is missing. this is a real product advantage for exa in any time-sensitive workflow —
+forecasting, research, competitive analysis — where you need results from a specific window.
+
 33 questions across 7 categories (politics, geopolitics, crypto, economics, tech, science, sports).
 all resolved in 2024, sourced from polymarket, metaculus, and manifold.
 

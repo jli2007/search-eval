@@ -16,7 +16,7 @@
 {"id": "pm_016", "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "crypto", "source": "manifold"}
 {"id": "pm_017", "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?", "resolution": true, "resolution_date": "2024-09-18", "category": "economics", "source": "polymarket"}
 {"id": "pm_018", "question": "Will the Federal Reserve cut interest rates before July 2024?", "resolution": false, "resolution_date": "2024-06-30", "category": "economics", "source": "polymarket"}
-{"id": "pm_019", "question": "Will the S&P 500 close above 5,000 in 2024?", "resolution": true, "resolution_date": "2024-02-08", "category": "economics", "source": "manifold"}
+{"id": "pm_019", "question": "Will the S&P 500 close above 5,000 in 2024?", "resolution": true, "resolution_date": "2024-02-09", "category": "economics", "source": "manifold"}
 {"id": "pm_020", "question": "Will the US economy enter a recession in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "economics", "source": "metaculus"}
 {"id": "pm_021", "question": "Will OpenAI release GPT-5 by end of 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "tech", "source": "manifold"}
 {"id": "pm_022", "question": "Will Apple release the Vision Pro in Q1 2024?", "resolution": true, "resolution_date": "2024-02-02", "category": "tech", "source": "metaculus"}
@@ -30,4 +30,4 @@
 {"id": "pm_030", "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?", "resolution": true, "resolution_date": "2024-04-15", "category": "sports", "source": "manifold"}
 {"id": "pm_031", "question": "Will the Los Angeles Dodgers win the 2024 World Series?", "resolution": true, "resolution_date": "2024-10-30", "category": "sports", "source": "polymarket"}
 {"id": "pm_032", "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?", "resolution": false, "resolution_date": "2024-05-18", "category": "sports", "source": "polymarket"}
-{"id": "pm_033", "question": "Will Inter Miami win MLS Cup 2024?", "resolution": false, "resolution_date": "2024-12-07", "category": "sports", "source": "manifold"}
+{"id": "pm_033", "question": "Will Inter Miami win MLS Cup 2024?", "resolution": false, "resolution_date": "2024-11-10", "category": "sports", "source": "manifold"}

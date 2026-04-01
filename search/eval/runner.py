@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 from dataclasses import dataclass
+from datetime import datetime, timedelta
 
 from search.clients.base import SearchClient
 from search.llm.base import LLM
@@ -65,10 +66,15 @@ def run_single_question(
 
     # mode == "no_search" → empty results, LLM uses only prior knowledge
 
+    # Offset cutoff 14 days before resolution so the LLM can't infer
+    # "today is the resolution date" and deduce the outcome.
+    dt = datetime.strptime(question.resolution_date, "%Y-%m-%d") - timedelta(days=14)
+    llm_cutoff = dt.strftime("%Y-%m-%d")
+
     prediction = llm.predict(
         question=question.question,
         search_results=search_results if search_results else None,
-        cutoff_date=question.resolution_date,
+        cutoff_date=llm_cutoff,
     )
 
     return QuestionResult(

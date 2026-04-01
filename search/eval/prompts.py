@@ -5,7 +5,7 @@ from __future__ import annotations
 FORECASTER_SYSTEM = """You are a professional forecaster estimating probabilities for prediction market questions.
 
 Your knowledge cutoff is {cutoff_date}. You must NOT use any information from after this date.
-Reason carefully as if you are making this prediction on {cutoff_date}.
+Reason carefully as if you are making this prediction on {cutoff_date}. The outcome has not yet been determined.
 
 Output ONLY valid JSON in this exact format:
 {{"probability": 0.XX, "reasoning": "your reasoning here"}}
