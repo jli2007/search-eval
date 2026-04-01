@@ -25,9 +25,9 @@ class ExaClient:
                 num_results=num_results,
                 highlights={"max_characters": 4000},
             )
-            # Offset by 3 days to avoid articles that leak the resolution
+            # Offset by 7 days to avoid articles that leak the resolution
             if before_date:
-                dt = datetime.strptime(before_date, "%Y-%m-%d") - timedelta(days=3)
+                dt = datetime.strptime(before_date, "%Y-%m-%d") - timedelta(days=7)
                 kwargs["end_published_date"] = dt.strftime("%Y-%m-%dT00:00:00.000Z")
             response = self.client.search_and_contents(query, **kwargs)
         except Exception as e:

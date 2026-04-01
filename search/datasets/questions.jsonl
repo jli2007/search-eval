@@ -1,0 +1,33 @@
+{"id": "pm_001", "question": "Will Donald Trump win the 2024 US presidential election?", "resolution": true, "resolution_date": "2024-11-06", "category": "politics", "source": "polymarket"}
+{"id": "pm_002", "question": "Will Joe Biden be the 2024 Democratic nominee?", "resolution": false, "resolution_date": "2024-07-21", "category": "politics", "source": "polymarket"}
+{"id": "pm_003", "question": "Will Joe Biden pardon Hunter Biden?", "resolution": true, "resolution_date": "2024-12-01", "category": "politics", "source": "polymarket"}
+{"id": "pm_004", "question": "Will Donald Trump be convicted in a criminal trial in 2024?", "resolution": true, "resolution_date": "2024-05-30", "category": "politics", "source": "polymarket"}
+{"id": "pm_005", "question": "Will the US Supreme Court uphold the TikTok ban?", "resolution": true, "resolution_date": "2025-01-17", "category": "politics", "source": "polymarket"}
+{"id": "pm_006", "question": "Will the Republicans win control of the US Senate in 2024?", "resolution": true, "resolution_date": "2024-11-06", "category": "politics", "source": "polymarket"}
+{"id": "pm_007", "question": "Will there be a US Supreme Court vacancy in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "politics", "source": "polymarket"}
+{"id": "pm_008", "question": "Will Sweden join NATO in 2024?", "resolution": true, "resolution_date": "2024-03-07", "category": "geopolitics", "source": "metaculus"}
+{"id": "pm_009", "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "geopolitics", "source": "metaculus"}
+{"id": "pm_010", "question": "Will China take military action against Taiwan in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "geopolitics", "source": "polymarket"}
+{"id": "pm_011", "question": "Will Israel and Hamas reach a permanent ceasefire by end of 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "geopolitics", "source": "polymarket"}
+{"id": "pm_012", "question": "Will North Korea conduct a nuclear test in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "geopolitics", "source": "metaculus"}
+{"id": "pm_013", "question": "Will a Bitcoin spot ETF be approved by January 15, 2024?", "resolution": true, "resolution_date": "2024-01-10", "category": "crypto", "source": "polymarket"}
+{"id": "pm_014", "question": "Will Bitcoin reach $100,000 by end of 2024?", "resolution": true, "resolution_date": "2024-12-05", "category": "crypto", "source": "polymarket"}
+{"id": "pm_015", "question": "Will an Ethereum spot ETF be approved in 2024?", "resolution": true, "resolution_date": "2024-05-23", "category": "crypto", "source": "polymarket"}
+{"id": "pm_016", "question": "Will Bitcoin's price drop below $20,000 at any point in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "crypto", "source": "manifold"}
+{"id": "pm_017", "question": "Will the Federal Reserve cut interest rates by 50 basis points at the September 2024 meeting?", "resolution": true, "resolution_date": "2024-09-18", "category": "economics", "source": "polymarket"}
+{"id": "pm_018", "question": "Will the Federal Reserve cut interest rates before July 2024?", "resolution": false, "resolution_date": "2024-06-30", "category": "economics", "source": "polymarket"}
+{"id": "pm_019", "question": "Will the S&P 500 close above 5,000 in 2024?", "resolution": true, "resolution_date": "2024-02-08", "category": "economics", "source": "manifold"}
+{"id": "pm_020", "question": "Will the US economy enter a recession in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "economics", "source": "metaculus"}
+{"id": "pm_021", "question": "Will OpenAI release GPT-5 by end of 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "tech", "source": "manifold"}
+{"id": "pm_022", "question": "Will Apple release the Vision Pro in Q1 2024?", "resolution": true, "resolution_date": "2024-02-02", "category": "tech", "source": "metaculus"}
+{"id": "pm_023", "question": "Will Neuralink implant a brain chip in a human in 2024?", "resolution": true, "resolution_date": "2024-01-29", "category": "tech", "source": "metaculus"}
+{"id": "pm_024", "question": "Will Tesla begin selling a fully autonomous robotaxi in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "tech", "source": "manifold"}
+{"id": "pm_025", "question": "Will NASA's Artemis II mission launch in 2024?", "resolution": false, "resolution_date": "2024-12-31", "category": "science", "source": "metaculus"}
+{"id": "pm_026", "question": "Will there be a successful commercial Moon landing in early 2024?", "resolution": true, "resolution_date": "2024-02-22", "category": "science", "source": "metaculus"}
+{"id": "pm_027", "question": "Will Boeing Starliner complete a crewed launch in 2024?", "resolution": true, "resolution_date": "2024-06-05", "category": "science", "source": "metaculus"}
+{"id": "pm_028", "question": "Will the Kansas City Chiefs win Super Bowl LVIII?", "resolution": true, "resolution_date": "2024-02-11", "category": "sports", "source": "polymarket"}
+{"id": "pm_029", "question": "Will the Boston Celtics win the 2024 NBA Championship?", "resolution": true, "resolution_date": "2024-06-17", "category": "sports", "source": "polymarket"}
+{"id": "pm_030", "question": "Will Caitlin Clark be the #1 pick in the 2024 WNBA Draft?", "resolution": true, "resolution_date": "2024-04-15", "category": "sports", "source": "manifold"}
+{"id": "pm_031", "question": "Will the Los Angeles Dodgers win the 2024 World Series?", "resolution": true, "resolution_date": "2024-10-30", "category": "sports", "source": "polymarket"}
+{"id": "pm_032", "question": "Will Tyson Fury beat Oleksandr Usyk in their May 2024 fight?", "resolution": false, "resolution_date": "2024-05-18", "category": "sports", "source": "polymarket"}
+{"id": "pm_033", "question": "Will Inter Miami win MLS Cup 2024?", "resolution": false, "resolution_date": "2024-12-07", "category": "sports", "source": "manifold"}
