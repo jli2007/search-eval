@@ -13,12 +13,11 @@ the only variable is the search api.
 
 ### setup:
 
-  cp .env.example .env
-
-  pip install -e .
-
-  python3 -m search
-  
+```
+cp .env.example .env
+pip install -e .
+python3 -m search
+```
 
 ### why this works
 
