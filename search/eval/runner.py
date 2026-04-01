@@ -25,7 +25,6 @@ class Question:
 def load_questions(path: str) -> list[Question]:
     questions = []
     with open(path) as f:
-        # Support both .json (array) and .jsonl (one object per line)
         if path.endswith(".jsonl"):
             for line in f:
                 line = line.strip()
@@ -37,7 +36,6 @@ def load_questions(path: str) -> list[Question]:
     return questions
 
 
-# Run one question: search (depending on mode) → LLM prediction → scored result.
 def run_single_question(
     question: Question,
     client: SearchClient,
@@ -50,7 +48,6 @@ def run_single_question(
     queries_used = []
 
     if mode == "agentic":
-        # LLM generates its own search strategy
         queries = llm.generate_search_queries(question.question, num_queries)
         queries_used = queries
         for q in queries:
@@ -58,16 +55,12 @@ def run_single_question(
             search_results.extend(hits)
 
     elif mode == "single":
-        # Use question text as the query directly
         queries_used = [question.question]
         search_results = client.search(
             question.question, num_results=results_per_query, before_date=question.resolution_date,
         )
 
-    # mode == "no_search" → empty results, LLM uses only prior knowledge
-
-    # Offset cutoff 14 days before resolution so the LLM can't infer
-    # "today is the resolution date" and deduce the outcome.
+    # offset cutoff before resolution to prevent leakage
     dt = datetime.strptime(question.resolution_date, "%Y-%m-%d") - timedelta(days=14)
     llm_cutoff = dt.strftime("%Y-%m-%d")
 
@@ -91,7 +84,6 @@ def run_single_question(
     )
 
 
-# ANSI colors for live progress
 _BOLD = "\033[1m"
 _DIM = "\033[2m"
 _GREEN = "\033[32m"
@@ -100,7 +92,6 @@ _YELLOW = "\033[33m"
 _CYAN = "\033[36m"
 _RESET = "\033[0m"
 
-# Run all questions for one provider/mode combination.
 def run_eval(
     questions: list[Question],
     client: SearchClient,
@@ -117,7 +108,6 @@ def run_eval(
 
         result = run_single_question(q, client, llm, mode, num_queries, results_per_query)
 
-        # Color the probability based on how close to ground truth
         brier = result.brier_score
         b_color = _GREEN if brier < 0.15 else _YELLOW if brier < 0.35 else _RED
         actual = f"{_GREEN}YES{_RESET}" if result.resolution else f"{_RED}NO{_RESET}"

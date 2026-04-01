@@ -5,7 +5,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import matplotlib
 
-matplotlib.use("Agg")  # non-interactive backend
+matplotlib.use("Agg")
 
 from search.eval.scorer import ProviderResult
 
@@ -17,7 +17,6 @@ def plot_all(results: list[ProviderResult], output_dir: str = "search/results"):
     plot_category_heatmap(results, output_dir)
 
 
-# Bar chart comparing mean Brier score across providers/modes.
 def plot_brier_comparison(results: list[ProviderResult], output_dir: str):
     labels = [f"{r.provider}\n{r.mode}" for r in results]
     briers = [r.mean_brier for r in results]
@@ -43,12 +42,8 @@ def plot_brier_comparison(results: list[ProviderResult], output_dir: str):
     print(f"  Saved {path}")
 
 
-# Calibration curve: predicted probability vs actual resolution rate.
-# Perfect calibration = diagonal line.
 def plot_calibration(results: list[ProviderResult], output_dir: str):
     fig, ax = plt.subplots(figsize=(6, 6))
-
-    # Perfect calibration line
     ax.plot([0, 1], [0, 1], "k--", alpha=0.3, label="Perfect calibration")
 
     colors = ["#2196F3", "#F44336", "#4CAF50", "#FF9800", "#9C27B0"]
@@ -79,7 +74,6 @@ def plot_calibration(results: list[ProviderResult], output_dir: str):
     print(f"  Saved {path}")
 
 
-# Grouped bar chart showing Brier score per category per provider.
 def plot_category_heatmap(results: list[ProviderResult], output_dir: str):
     all_cats = sorted(set(cat for r in results for cat in r.brier_by_category()))
     if not all_cats:

@@ -98,11 +98,9 @@ class OpenAILLM:
 
         if isinstance(parsed, list):
             return [str(q) for q in parsed[:num_queries]]
-        # fallback: use the question itself
         return [question]
 
     def _parse_json(self, text: str) -> dict | list:
-        # strip markdown code fences if present
         text = re.sub(r"```json\s*", "", text)
         text = re.sub(r"```\s*$", "", text)
         try:

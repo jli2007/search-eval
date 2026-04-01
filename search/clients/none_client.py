@@ -2,7 +2,6 @@ from __future__ import annotations
 from search.clients.base import SearchResult
 
 
-# Baseline client that returns no search results.
 class NoneClient:
     @property
     def name(self) -> str:

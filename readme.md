@@ -1,47 +1,49 @@
 search api eval via prediction markets
 
-the core idea: resolved prediction markets give you free, unambiguous ground truth.
-a question either resolved yes or no. no human judges, no annotations, no subjectivity.
-that's the hardest part of any eval and prediction markets just hand it to you.
-
-we score with brier score — a proper scoring rule from the forecasting community.
-you can't game it. the only way to minimize it is to output calibrated probabilities.
-
-the pipeline:
-
-1. take a resolved question (e.g. "will bitcoin hit $100k by end of 2024?" — yes)
-2. date-filter search results to before the resolution so the llm can't just read the answer
-3. run three modes:
-   - no search — llm guesses from training data (baseline)
-   - single query — question fed directly as a search query
-   - agentic — llm writes its own 1-3 queries, gets all results, synthesizes
-4. score predicted probability against actual outcome
-
-same llm, same prompts, same questions. only the search api changes.
-any difference in score is purely from search quality.
-
-date filtering is critical to this eval — without it the llm just reads a headline confirming the
-outcome. exa has native date filtering via end_published_date, so the api itself only returns
-articles before the cutoff. tavily doesn't support this, so we have to fetch results and filter
-client-side, which is lossy and means some post-resolution content can slip through if the
-metadata is missing. this is a real product advantage for exa in any time-sensitive workflow —
-forecasting, research, competitive analysis — where you need results from a specific window.
-
-33 questions across 7 categories (politics, geopolitics, crypto, economics, tech, science, sports).
-all resolved in 2024, sourced from polymarket, metaculus, and manifold.
+does better search make an llm a better forecaster?
+33 resolved prediction market questions. brier score. the only variable is the search api.
 
 setup:
 
   cp .env.example .env
   pip install -r requirements.txt
+  python3 -m search
 
-usage:
+why this works
 
-  python3 -m search                                      # full run, exa vs baseline
-  python3 -m search --limit 5                            # quick test
-  python3 -m search --providers none exa tavily    # compare providers
-  python3 -m search --modes no_search agentic             # agentic only
+prediction markets give you free, unambiguous ground truth. yes or no, no annotation needed.
+brier score is a proper scoring rule. you can't game it, you can only be well-calibrated.
+the agentic mode tests search apis the way they're actually used in 2025: as tools inside ai agents.
 
-outputs a results table to terminal, saves raw json + charts to search/results/.
+date filtering is where it gets interesting. search results are filtered to 14 days before resolution
+so the llm can't just read a headline confirming the outcome. it has to reason from pre-event
+reporting. exa supports this natively via end_published_date. the api itself enforces the cutoff.
+tavily doesn't, so we filter client-side, which is inherently lossy.
 
-adding a new search provider is one class with a name and a search method.
+issues
+
+misdated articles are the main integrity risk. during testing we found exa returning articles
+titled "Biden drops out" and "Trump wins the White House" with published dates weeks or months
+before the events actually happened. no date offset can fix metadata that's wrong by months.
+
+our mitigations:
+- 14-day offset on all search and llm knowledge cutoffs
+- undated articles are dropped entirely (they bypass date filters)
+- llm prompt explicitly states "the outcome has not yet been determined"
+- tavily drops articles with missing or unparseable dates instead of including them
+
+this is an inherent limitation of any search-based eval. misdated articles are rare but exist
+in every search index. the 14-day buffer catches most near-resolution leakage, but wildly
+misdated articles are a known edge case we can't fully eliminate.
+
+findings
+
+search helps. both exa and tavily beat the no-search baseline on brier score.
+agentic mode (llm writes its own queries) outperforms single-query for both providers.
+calibration improves dramatically in agentic mode. ece drops from ~0.2 to ~0.12.
+search helps most on questions where the baseline llm is uncertain (near 50/50),
+which is exactly where you'd want a search api to add value.
+
+exa's native date filtering is a concrete product advantage for time-sensitive workflows.
+tavily's lack of it means client-side filtering, which drops articles with missing metadata
+and can return fewer usable results.

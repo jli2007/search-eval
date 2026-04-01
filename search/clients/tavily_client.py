@@ -41,23 +41,23 @@ class TavilyClient:
             logger.warning(f"Tavily search failed: {e}")
             return []
 
-        # Filter by date if specified (Tavily doesn't have native date filtering)
+        # tavily lacks native date filtering, so we filter post-hoc
         cutoff = None
         if before_date:
-            cutoff = datetime.strptime(before_date, "%Y-%m-%d") - timedelta(days=7)
+            cutoff = datetime.strptime(before_date, "%Y-%m-%d") - timedelta(days=14)
 
         results = []
         for r in data.get("results", []):
             if cutoff:
                 pub_str = r.get("published_date")
                 if not pub_str:
-                    continue  # skip articles with no date when filtering is active
+                    continue
                 try:
                     pub = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
                     if pub.replace(tzinfo=None) > cutoff:
                         continue
                 except (ValueError, TypeError):
-                    continue  # skip articles with unparseable dates
+                    continue
 
             results.append(
                 SearchResult(

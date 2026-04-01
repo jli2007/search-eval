@@ -1,5 +1,6 @@
 from __future__ import annotations
 import math
+import random
 from dataclasses import dataclass, field
 
 
@@ -8,7 +9,7 @@ class QuestionResult:
     question_id: str
     question_text: str
     category: str
-    resolution: bool  # ground truth
+    resolution: bool
     provider: str
     mode: str
     predicted_probability: float
@@ -16,14 +17,12 @@ class QuestionResult:
     search_queries_used: list[str] = field(default_factory=list)
     num_results_used: int = 0
 
-    # Brier score: (prediction - outcome)^2
     @property
     def brier_score(self) -> float:
         outcome = 1.0 if self.resolution else 0.0
         return (self.predicted_probability - outcome) ** 2
 
-    # Log loss: -[y*log(p) + (1-y)*log(1-p)]
-    # Penalizes confident wrong predictions much more harshly than Brier.
+    # penalizes confident wrong predictions harder than brier
     @property
     def log_loss(self) -> float:
         outcome = 1.0 if self.resolution else 0.0
@@ -53,15 +52,13 @@ class ProviderResult:
     def n(self) -> int:
         return len(self.question_results)
 
-    # Brier score grouped by category.
     def brier_by_category(self) -> dict[str, float]:
         buckets: dict[str, list[float]] = {}
         for r in self.question_results:
             buckets.setdefault(r.category, []).append(r.brier_score)
         return {cat: sum(s) / len(s) for cat, s in buckets.items()}
 
-    # Calibration: bin predictions, compare predicted vs actual resolution rate.
-    # Perfect calibration = when you say 70%, it happens 70% of the time.
+    # bin predictions, compare predicted vs actual resolution rate
     def calibration_data(self, num_bins: int = 5) -> list[dict]:
         bins: list[list[QuestionResult]] = [[] for _ in range(num_bins)]
         for r in self.question_results:
@@ -84,8 +81,6 @@ class ProviderResult:
             })
         return data
 
-    # Expected Calibration Error — single number for calibration quality.
-    # Lower = better calibrated. 0 = perfect.
     def expected_calibration_error(self, num_bins: int = 5) -> float:
         cal = self.calibration_data(num_bins)
         total = sum(b["count"] for b in cal)
@@ -97,15 +92,13 @@ class ProviderResult:
         )
 
 
-# Percentage improvement of provider vs baseline. Higher = better.
 def compute_uplift(provider_brier: float, baseline_brier: float) -> float:
     if baseline_brier == 0:
         return 0.0
     return (baseline_brier - provider_brier) / baseline_brier * 100
 
 
-# The key insight: does search help MORE when the LLM is uncertain?
-# Splits questions by baseline confidence and compares uplift in each bucket.
+# splits questions by baseline confidence, compares uplift in each bucket
 def confidence_weighted_analysis(
     provider: ProviderResult,
     baseline: ProviderResult,
@@ -117,7 +110,6 @@ def confidence_weighted_analysis(
         base = baseline_map.get(r.question_id)
         if not base:
             continue
-        # Uncertain = baseline prediction between 0.3 and 0.7
         if 0.3 <= base.predicted_probability <= 0.7:
             uncertain.append((r.brier_score, base.brier_score))
         else:
@@ -138,4 +130,62 @@ def confidence_weighted_analysis(
     return {
         "uncertain": summarize(uncertain),
         "confident": summarize(confident),
+    }
+
+
+# resample with replacement to estimate distribution of the mean
+def bootstrap_ci(scores: list[float], n_bootstrap: int = 10000, ci: float = 0.95) -> tuple[float, float]:
+    if len(scores) < 2:
+        mean = scores[0] if scores else 0.0
+        return (mean, mean)
+    rng = random.Random(42)
+    means = sorted(
+        sum(rng.choices(scores, k=len(scores))) / len(scores)
+        for _ in range(n_bootstrap)
+    )
+    lo_idx = int((1 - ci) / 2 * n_bootstrap)
+    hi_idx = int((1 + ci) / 2 * n_bootstrap) - 1
+    return (means[lo_idx], means[hi_idx])
+
+
+# shuffle labels between provider/baseline, check if observed diff is real
+def paired_permutation_test(
+    provider: ProviderResult,
+    baseline: ProviderResult,
+    n_permutations: int = 10000,
+) -> float:
+    baseline_map = {r.question_id: r for r in baseline.question_results}
+    pairs = []
+    for r in provider.question_results:
+        base = baseline_map.get(r.question_id)
+        if base:
+            pairs.append((r.brier_score, base.brier_score))
+    if not pairs:
+        return 1.0
+
+    observed = sum(b - p for p, b in pairs) / len(pairs)
+    rng = random.Random(42)
+    count = 0
+    for _ in range(n_permutations):
+        perm_diff = 0.0
+        for p_score, b_score in pairs:
+            if rng.random() < 0.5:
+                perm_diff += b_score - p_score
+            else:
+                perm_diff += p_score - b_score
+        if perm_diff / len(pairs) >= observed:
+            count += 1
+    return count / n_permutations
+
+
+def cost_summary(result: ProviderResult) -> dict:
+    total_queries = sum(len(r.search_queries_used) for r in result.question_results)
+    total_results = sum(r.num_results_used for r in result.question_results)
+    n = result.n or 1
+    return {
+        "total_queries": total_queries,
+        "total_results": total_results,
+        "avg_queries_per_question": round(total_queries / n, 1),
+        "avg_results_per_question": round(total_results / n, 1),
+        "n": n,
     }
