@@ -1,10 +1,15 @@
 ## search api eval via prediction markets
 
 does better search make an llm a better forecaster?
-33 resolved prediction market questions. brier score. the only variable is the search api.
 
-![cli](images/cli.png)
-![cli results](images/cli-results.png)
+33 resolved prediction market questions using brier score. 
+
+the only variable is the search api.
+
+<p>
+  <img src="images/cli.png" width="49%">
+  <img src="images/cli-results.png" width="49%">
+</p>
 
 ### setup:
 
