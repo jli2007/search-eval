@@ -1,6 +1,7 @@
 from __future__ import annotations
 import os
 import logging
+from datetime import datetime, timedelta
 from exa_py import Exa
 from search.clients.base import SearchResult
 
@@ -24,9 +25,10 @@ class ExaClient:
                 num_results=num_results,
                 highlights={"max_characters": 4000},
             )
-            # Filter to content published before the resolution date
+            # Offset by 3 days to avoid articles that leak the resolution
             if before_date:
-                kwargs["end_published_date"] = before_date
+                dt = datetime.strptime(before_date, "%Y-%m-%d") - timedelta(days=3)
+                kwargs["end_published_date"] = dt.strftime("%Y-%m-%dT00:00:00.000Z")
             response = self.client.search_and_contents(query, **kwargs)
         except Exception as e:
             logger.warning(f"Exa search failed: {e}")
