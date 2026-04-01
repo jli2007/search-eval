@@ -1,15 +1,15 @@
-search api eval via prediction markets
+## search api eval via prediction markets
 
 does better search make an llm a better forecaster?
 33 resolved prediction market questions. brier score. the only variable is the search api.
 
-setup:
+### setup:
 
   cp .env.example .env
-  pip install -r requirements.txt
+  pip install -e .
   python3 -m search
 
-why this works
+### why this works
 
 prediction markets give you free, unambiguous ground truth. yes or no, no annotation needed.
 brier score is a proper scoring rule. you can't game it, you can only be well-calibrated.
@@ -20,13 +20,13 @@ so the llm can't just read a headline confirming the outcome. it has to reason f
 reporting. exa supports this natively via end_published_date. the api itself enforces the cutoff.
 tavily doesn't, so we filter client-side, which is inherently lossy.
 
-issues
+### issues
 
 misdated articles are the main integrity risk. during testing we found exa returning articles
 titled "Biden drops out" and "Trump wins the White House" with published dates weeks or months
 before the events actually happened. no date offset can fix metadata that's wrong by months.
 
-our mitigations:
+mitigations:
 - 14-day offset on all search and llm knowledge cutoffs
 - undated articles are dropped entirely (they bypass date filters)
 - llm prompt explicitly states "the outcome has not yet been determined"
@@ -36,7 +36,7 @@ this is an inherent limitation of any search-based eval. misdated articles are r
 in every search index. the 14-day buffer catches most near-resolution leakage, but wildly
 misdated articles are a known edge case we can't fully eliminate.
 
-findings
+### findings
 
 search helps. both exa and tavily beat the no-search baseline on brier score.
 agentic mode (llm writes its own queries) outperforms single-query for both providers.
