@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.scripts]
-predsearch = "search.cli:main"
+search = "search.cli:main"

@@ -48,7 +48,7 @@ def print_results(all_results: list[ProviderResult]):
 
     # Header
     print(f"\n{colored('=' * 60, C.BOLD)}")
-    print(colored("  PREDSEARCH BENCHMARK RESULTS", C.BOLD))
+    print(colored("  SEARCH BENCHMARK RESULTS", C.BOLD))
     print(colored('=' * 60, C.BOLD))
 
     # Findings table — the core output of the benchmark
@@ -155,7 +155,7 @@ def save_results(all_results: list[ProviderResult], output_dir: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="PredSearch — Prediction Market Search Benchmark")
+    parser = argparse.ArgumentParser(description="Search API Eval — Prediction Market Benchmark")
     parser.add_argument("--providers", nargs="+", default=["none", "exa", "tavily"])
     parser.add_argument("--modes", nargs="+", default=["no_search", "single", "agentic"])
     parser.add_argument("--questions", default="search/datasets/questions.jsonl")
