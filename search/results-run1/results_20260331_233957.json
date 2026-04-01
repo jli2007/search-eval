@@ -1,0 +1,822 @@
+[
+  {
+    "question_id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US presidential election?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.45,
+    "brier_score": 0.30250000000000005,
+    "log_loss": 0.7985076962177716,
+    "reasoning": "As of November 2024, Donald Trump has a strong base of support within the Republican Party and has been leading in various polls against potential Democratic candidates. However, there are significant factors that could impact his chances, including voter turnout, the state of the economy, and potential legal challenges he faces. The Democratic candidate may also have strong appeal, which could sway independent voters. Given these variables, a probability of 45% reflects a competitive race with uncertainty.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_002",
+    "question": "Will Joe Biden be the 2024 Democratic nominee?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.75,
+    "brier_score": 0.5625,
+    "log_loss": 1.3862943611198906,
+    "reasoning": "As of July 2024, Joe Biden is the incumbent president and has a significant advantage in securing the Democratic nomination. Historically, incumbents face little opposition within their party, and Biden has maintained a strong base of support among Democratic voters. While there may be some challengers, the likelihood of Biden being the nominee remains high due to his established position and the party's preference for continuity.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_003",
+    "question": "Will Joe Biden pardon Hunter Biden?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.3,
+    "brier_score": 0.48999999999999994,
+    "log_loss": 1.2039728043259361,
+    "reasoning": "As of December 2024, Joe Biden has maintained a public stance of supporting his son, Hunter Biden, amid ongoing legal challenges. However, pardoning Hunter would be politically controversial and could be perceived as an abuse of power, potentially alienating moderate voters. Given the political climate and the potential backlash, while there is a possibility of a pardon, it seems unlikely that Biden would take such a step, leading to a probability of around 30%.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_004",
+    "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.45,
+    "brier_score": 0.30250000000000005,
+    "log_loss": 0.7985076962177716,
+    "reasoning": "As of May 2024, Donald Trump is facing multiple legal challenges, including criminal trials. While there is significant evidence and legal scrutiny, the outcome of trials can be unpredictable due to various factors such as jury decisions, legal strategies, and potential appeals. Given the current political climate and Trump's strong support base, there is a reasonable chance of conviction, but it is not guaranteed. Therefore, a probability of 45% reflects a balanced view of the uncertainties involved.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_005",
+    "question": "Will the US Supreme Court uphold the TikTok ban?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.45,
+    "brier_score": 0.30250000000000005,
+    "log_loss": 0.7985076962177716,
+    "reasoning": "As of January 2025, the legal landscape surrounding TikTok and its potential ban in the US is highly contentious. There are significant arguments on both sides regarding national security concerns and First Amendment rights. The Supreme Court tends to be cautious with cases that could set broad precedents affecting free speech. Given the divided opinions and the potential for public backlash, it seems likely that the Court may lean towards not upholding a ban, but there remains a substantial chance that they could uphold it due to the government's national security arguments.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_006",
+    "question": "Will the Republicans win control of the US Senate in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.55,
+    "brier_score": 0.20249999999999996,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "As of November 2024, the political landscape shows a competitive environment for the Senate races. The Republicans have historically had strong support in several key states, and with the potential for favorable conditions such as incumbency and voter sentiment, they have a reasonable chance of gaining control. However, the Democrats also have strong candidates and could retain seats in critical areas. Given these factors, a slight edge can be given to the Republicans, estimating their probability of winning control at 55%.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_007",
+    "question": "Will there be a US Supreme Court vacancy in 2024?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.45,
+    "brier_score": 0.2025,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "As of December 31, 2024, there are no confirmed vacancies on the US Supreme Court, and the current justices are relatively young and healthy. However, given the unpredictable nature of health and the potential for retirement, there is a reasonable chance of a vacancy occurring in 2024. Historical trends suggest that Supreme Court vacancies can arise unexpectedly, which supports a moderate probability estimate.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_008",
+    "question": "Will Sweden join NATO in 2024?",
+    "category": "geopolitics",
+    "resolution": true,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.75,
+    "brier_score": 0.0625,
+    "log_loss": 0.2876820724517809,
+    "reasoning": "As of March 2024, Sweden has expressed strong interest in joining NATO, particularly in light of security concerns stemming from regional tensions. The Swedish government has been actively pursuing membership and has received support from NATO member states. However, the process requires unanimous approval from existing NATO members, and there are still some political dynamics and negotiations that could affect the timeline. Given the current momentum and political will, I estimate a 75% probability that Sweden will join NATO in 2024.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_009",
+    "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.3,
+    "brier_score": 0.09,
+    "log_loss": 0.35667494393873245,
+    "reasoning": "As of the end of 2024, the conflict between Russia and Ukraine remains complex and deeply entrenched, with ongoing military engagements and significant geopolitical tensions. While there have been intermittent discussions and attempts at negotiations, the lack of trust between the parties, coupled with external influences from other nations, makes a comprehensive ceasefire agreement unlikely. However, there is a possibility of temporary ceasefires or localized agreements, which contributes to a moderate probability of a formal ceasefire being reached by the end of 2024.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_010",
+    "question": "Will China take military action against Taiwan in 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "none",
+    "mode": "no_search",
+    "predicted_probability": 0.45,
+    "brier_score": 0.2025,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "As of the end of 2024, tensions between China and Taiwan remain high, with China continuing to assert its claims over Taiwan and conducting military exercises in the region. However, there are significant deterrents to outright military action, including potential international backlash, economic consequences, and the military capabilities of Taiwan and its allies. The probability reflects a significant risk of military action, but also acknowledges the complexities and uncertainties involved.",
+    "search_queries_used": [],
+    "num_results_used": 0
+  },
+  {
+    "question_id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US presidential election?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.65,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "As of November 2024, Donald Trump is in a competitive position for the presidential election, with various forecasts suggesting he has a strong chance of winning. The Economist's model indicates a two-in-three chance for Trump, while other analyses show a tight race with Kamala Harris, suggesting that the election could hinge on a few key states. However, the dynamics of the race are fluid, and while Trump has significant support, the outcome remains uncertain due to the competitive nature of the electoral landscape.",
+    "search_queries_used": [
+      "Will Donald Trump win the 2024 US presidential election?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_002",
+    "question": "Will Joe Biden be the 2024 Democratic nominee?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.95,
+    "brier_score": 0.9025,
+    "log_loss": 2.99573227355399,
+    "reasoning": "Joe Biden has clinched the 2024 Democratic nomination by winning enough delegates, with no major challengers remaining. The reports confirm that he is the presumptive nominee, and the Democratic Party has rallied around him, indicating a strong likelihood that he will be the official nominee at the convention.",
+    "search_queries_used": [
+      "Will Joe Biden be the 2024 Democratic nominee?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_003",
+    "question": "Will Joe Biden pardon Hunter Biden?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.05,
+    "brier_score": 0.9025,
+    "log_loss": 2.995732273553991,
+    "reasoning": "The White House has explicitly stated multiple times that President Biden has no intention of pardoning his son, Hunter Biden, who is facing sentencing for serious charges. Given the clear communication from the administration and the context of the upcoming sentencing, the likelihood of a pardon being issued appears very low.",
+    "search_queries_used": [
+      "Will Joe Biden pardon Hunter Biden?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_004",
+    "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "Donald Trump has already been found guilty of 34 felony charges related to falsifying business records in his hush money trial, making him the first former president in U.S. history to be convicted of a crime. Given this conviction, the likelihood of him being convicted in any subsequent criminal trials in 2024 is high, especially considering the ongoing legal challenges he faces. While there may be appeals or other legal maneuvers, the conviction already sets a precedent that significantly increases the probability of further convictions.",
+    "search_queries_used": [
+      "Will Donald Trump be convicted in a criminal trial in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_005",
+    "question": "Will the US Supreme Court uphold the TikTok ban?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "The Supreme Court has shown a strong inclination to uphold the TikTok ban, as indicated by multiple sources reporting that the justices focused on national security concerns during oral arguments. The bipartisan support for the law and the urgency surrounding the January 19 deadline further suggest that the Court is likely to rule in favor of the ban. However, there is still some uncertainty regarding the final decision, particularly with the political context surrounding the incoming administration.",
+    "search_queries_used": [
+      "Will the US Supreme Court uphold the TikTok ban?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_006",
+    "question": "Will the Republicans win control of the US Senate in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "The search results indicate a strong likelihood that Republicans will gain control of the Senate in 2024. Reports suggest that Republicans are in a favorable position, with forecasts giving them an 87% chance of winning a majority. Additionally, the retirement of key Democratic figures and the competitive nature of several races further bolster the GOP's chances. Given these factors, an 85% probability reflects a high confidence in Republican control of the Senate.",
+    "search_queries_used": [
+      "Will the Republicans win control of the US Senate in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_007",
+    "question": "Will there be a US Supreme Court vacancy in 2024?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.3,
+    "brier_score": 0.09,
+    "log_loss": 0.35667494393873245,
+    "reasoning": "While there is speculation about potential vacancies on the Supreme Court, historical patterns indicate that justices do not resign easily, especially when they are in good health. The recent reports suggest that Justice Sotomayor has no plans to resign, and the overall sentiment among justices is to remain until they can no longer serve. Given these factors, while there is a possibility of a vacancy due to unforeseen circumstances, the likelihood remains relatively low.",
+    "search_queries_used": [
+      "Will there be a US Supreme Court vacancy in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_008",
+    "question": "Will Sweden join NATO in 2024?",
+    "category": "geopolitics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.95,
+    "brier_score": 0.0025000000000000044,
+    "log_loss": 0.05129329438755058,
+    "reasoning": "As of March 7, 2024, Sweden has cleared all major hurdles to join NATO, with Hungary's parliamentary approval being the last requirement. This approval occurred on February 26, 2024, indicating that Sweden is set to become NATO's 32nd member. Given the current political landscape and the recent developments, it is highly likely that Sweden will officially join NATO in 2024.",
+    "search_queries_used": [
+      "Will Sweden join NATO in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_009",
+    "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.35,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "While there are ongoing discussions and some support for a ceasefire, particularly with the involvement of international figures like Donald Trump and Viktor Orban, the entrenched positions of both Russia and Ukraine suggest that a formal agreement by the end of 2024 is unlikely. The recent articles indicate that while there is a desire for negotiations, significant conditions remain unmet, and both sides are preparing for continued conflict. Therefore, the probability of reaching a ceasefire agreement by the end of 2024 is moderate but not high.",
+    "search_queries_used": [
+      "Will Russia and Ukraine agree to a ceasefire by end of 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_010",
+    "question": "Will China take military action against Taiwan in 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "single",
+    "predicted_probability": 0.15,
+    "brier_score": 0.0225,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "While China has not renounced the use of force and continues military drills around Taiwan, the prevailing assessments indicate that major military confrontation is unlikely in 2024. Reports suggest that China will prioritize intimidation and coercion tactics rather than outright military action. Additionally, the challenges associated with a successful invasion, including Taiwan's defenses and international responses, further reduce the likelihood of military action. Therefore, while the potential exists, the probability remains low.",
+    "search_queries_used": [
+      "Will China take military action against Taiwan in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US presidential election?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.55,
+    "brier_score": 0.20249999999999996,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "As of November 2024, polling data indicates a competitive race between Donald Trump and Kamala Harris, with various polls showing Trump either leading or closely trailing. Trump's support among key demographics, including young voters, has improved, and he has maintained a strong base within the Republican Party. However, the emergence of Kamala Harris as the Democratic nominee has introduced new dynamics into the race, potentially altering voter sentiment. Given the tight margins in swing states and the fluctuating nature of voter preferences, I estimate a slightly favorable probability for Trump winning the election, but not overwhelmingly so, reflecting the uncertainty of the electoral outcome.",
+    "search_queries_used": [
+      "Donald Trump 2024 presidential election polls October 2023",
+      "Donald Trump 2024 election opponents analysis",
+      "public opinion on Donald Trump 2024 election chances"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_002",
+    "question": "Will Joe Biden be the 2024 Democratic nominee?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.65,
+    "brier_score": 0.42250000000000004,
+    "log_loss": 1.0498221244986778,
+    "reasoning": "Despite facing significant challenges, including low approval ratings and a notable portion of Democrats expressing a desire for a different nominee, Joe Biden remains the incumbent president and has recently received endorsements from candidates who initially challenged him. The Democratic Party typically rallies around its incumbent, especially as the election approaches, which suggests a strong likelihood that he will be the nominee. However, the growing dissatisfaction among party members and the potential for alternative candidates could impact his nomination, leading to a probability estimate of 0.65.",
+    "search_queries_used": [
+      "Joe Biden 2024 Democratic nominee polls October 2023",
+      "Joe Biden challengers 2024 Democratic primary news",
+      "Democratic Party support for Joe Biden 2024 election analysis"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_003",
+    "question": "Will Joe Biden pardon Hunter Biden?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.75,
+    "brier_score": 0.0625,
+    "log_loss": 0.2876820724517809,
+    "reasoning": "As of December 1, 2024, there is significant evidence suggesting that President Joe Biden has indeed pardoned his son, Hunter Biden. Multiple sources indicate that Biden issued a full and unconditional pardon for Hunter in late 2024, despite earlier statements where he ruled out such an action. The political landscape surrounding this decision is complex, with public opinion divided and some backlash expected. However, the fact that the pardon has been reported and confirmed by credible news outlets suggests a high probability that the question will be answered in the affirmative.",
+    "search_queries_used": [
+      "Joe Biden Hunter Biden pardon news October 2023",
+      "Hunter Biden legal issues impact on pardon likelihood",
+      "public opinion on Joe Biden pardoning Hunter Biden 2023"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_004",
+    "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "Donald Trump has been found guilty on all counts in his hush-money trial, which indicates a high likelihood of conviction. The trial concluded with a jury verdict on May 30, 2024, confirming his guilt on 34 felony counts related to falsifying business records. Given that he has already been convicted, the probability of him being convicted in a criminal trial in 2024 is very high, as the question pertains to the conviction that has already occurred.",
+    "search_queries_used": [
+      "Donald Trump criminal trial 2024 conviction news",
+      "Donald Trump legal defense strategies 2024",
+      "public opinion on Donald Trump trial outcomes 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_005",
+    "question": "Will the US Supreme Court uphold the TikTok ban?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.35,
+    "brier_score": 0.42250000000000004,
+    "log_loss": 1.0498221244986778,
+    "reasoning": "The Supreme Court appears skeptical about the constitutionality of the law mandating a TikTok ban, as indicated by the justices' questioning during oral arguments. While there are significant national security concerns that could influence the Court's decision, the strong emphasis on free speech rights and the potential backlash from the public and users may lead to a more cautious approach. Additionally, the political landscape is shifting with the incoming administration, which could affect the Court's ruling. Therefore, while there is a notable chance the ban could be upheld, the skepticism expressed by the justices suggests a lower probability of a definitive YES.",
+    "search_queries_used": [
+      "US Supreme Court TikTok ban decision news 2023",
+      "legal arguments against TikTok ban Supreme Court",
+      "public opinion TikTok ban Supreme Court 2023"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_006",
+    "question": "Will the Republicans win control of the US Senate in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.68,
+    "brier_score": 0.10239999999999996,
+    "log_loss": 0.3856624808119846,
+    "reasoning": "The Republicans are currently favored to gain control of the Senate, with several key races leaning in their direction. Polls indicate that Democrats are facing significant challenges, particularly in states like Montana and West Virginia, where they are likely to lose seats. The Republicans need to gain only one or two seats to secure a majority, and the current political landscape suggests they have a strong chance of doing so. However, the situation remains competitive, and while Republicans have the upper hand, there is still uncertainty that could affect the final outcome.",
+    "search_queries_used": [
+      "2024 US Senate election Republican control polls",
+      "Republican Senate candidates 2024 election analysis",
+      "2024 Senate election predictions Democratic challenges"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_007",
+    "question": "Will there be a US Supreme Court vacancy in 2024?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.65,
+    "brier_score": 0.42250000000000004,
+    "log_loss": 1.0498221244986778,
+    "reasoning": "There is significant speculation regarding potential retirements among Supreme Court justices following the 2024 presidential election, particularly concerning Justices Sotomayor, Thomas, and Alito. At 70, Sotomayor is under pressure to retire to allow a Democratic president to appoint her successor, while Thomas and Alito, both in their mid-70s, are also seen as potential candidates for retirement. Given the age of these justices and the political context, there is a reasonable likelihood of at least one vacancy occurring in 2024.",
+    "search_queries_used": [
+      "US Supreme Court justices retirement predictions 2024",
+      "current health status of US Supreme Court justices 2023",
+      "historical trends of Supreme Court vacancies and retirements"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_008",
+    "question": "Will Sweden join NATO in 2024?",
+    "category": "geopolitics",
+    "resolution": true,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.95,
+    "brier_score": 0.0025000000000000044,
+    "log_loss": 0.05129329438755058,
+    "reasoning": "As of March 7, 2024, Sweden has officially joined NATO, with Hungary's parliament voting in favor of Sweden's accession on February 26, 2024. This vote cleared the final hurdle for Sweden to become NATO's 32nd member, following Turkey's earlier approval. The overwhelming support in Hungary's parliament (188 to 6) indicates strong political backing for Sweden's membership. Given these developments, the probability of Sweden being a NATO member in 2024 is very high.",
+    "search_queries_used": [
+      "Sweden NATO membership news 2024",
+      "Sweden opposition to NATO membership 2024",
+      "Sweden NATO accession timeline updates 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_009",
+    "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.35,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "While there have been calls for a ceasefire from various parties, including the newly elected U.S. President Donald Trump, the underlying conditions for a ceasefire remain contentious. Russia's insistence on Ukraine withdrawing from occupied territories and renouncing NATO membership clashes with Ukraine's goals of sovereignty and territorial integrity. Additionally, Ukraine has shown reluctance to compromise on these issues, as evidenced by its rejection of proposals that do not align with its interests. The deep-seated mistrust and conflicting narratives further complicate the likelihood of reaching an agreement by the end of 2024, leading to a moderate probability of a ceasefire being agreed upon.",
+    "search_queries_used": [
+      "Russia Ukraine ceasefire negotiations 2024 news",
+      "Russia Ukraine ceasefire obstacles challenges 2024",
+      "international response Russia Ukraine ceasefire agreement 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_010",
+    "question": "Will China take military action against Taiwan in 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "exa",
+    "mode": "agentic",
+    "predicted_probability": 0.45,
+    "brier_score": 0.2025,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "The recent military movements by China around Taiwan indicate a significant increase in military readiness and assertiveness, particularly following provocative actions by Taiwan's leadership and U.S. arms sales to Taiwan. However, while the situation is tense, there is no definitive indication that China will escalate to outright military action in 2024. The Chinese government has historically preferred to use military posturing as a means of coercion rather than direct conflict, especially given the potential international repercussions and the current geopolitical landscape. Therefore, while the probability of military action is notable, it remains below 50% due to the complexities involved.",
+    "search_queries_used": [
+      "China military action Taiwan 2024 news",
+      "Taiwan defense strategies against China 2024",
+      "China Taiwan relations military tensions 2024 updates"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US presidential election?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "The search results indicate that Donald Trump has won the presidential election, securing key states and the necessary electoral votes. This strong outcome suggests a high probability of his victory. However, the presence of ongoing discussions about electoral dynamics and potential challenges means that while the result appears definitive, there is still a small chance of uncertainty, justifying a probability of 0.85.",
+    "search_queries_used": [
+      "Will Donald Trump win the 2024 US presidential election?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_002",
+    "question": "Will Joe Biden be the 2024 Democratic nominee?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.3,
+    "brier_score": 0.09,
+    "log_loss": 0.35667494393873245,
+    "reasoning": "As of July 2024, Joe Biden has faced significant challenges within the Democratic Party, including primary challengers and concerns about his age and viability in the general election. While he has been the incumbent and has a strong base, the emergence of challengers like Marianne Williamson and the potential for a significant shift in party sentiment could impact his nomination. The search results indicate a mix of support and dissent, suggesting a competitive primary environment. Therefore, while Biden has a reasonable chance of being the nominee, it is not guaranteed, leading to a probability of 30%.",
+    "search_queries_used": [
+      "Will Joe Biden be the 2024 Democratic nominee?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_003",
+    "question": "Will Joe Biden pardon Hunter Biden?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.95,
+    "brier_score": 0.0025000000000000044,
+    "log_loss": 0.05129329438755058,
+    "reasoning": "On December 1, 2024, it was confirmed that President Joe Biden pardoned his son, Hunter Biden, despite previously stating he would not do so. This indicates a significant change in Biden's stance, suggesting that the probability of him pardoning Hunter was low prior to the announcement but ultimately resulted in a high probability of a pardon being granted. Given the confirmation of the pardon, the probability is estimated to be very high.",
+    "search_queries_used": [
+      "Will Joe Biden pardon Hunter Biden?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_004",
+    "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "As of May 30, 2024, Donald Trump has been convicted of 34 felony counts related to falsifying business records. This conviction marks a significant legal milestone, making him the first former president to be convicted of felony crimes. Given the current legal landscape and the ongoing nature of his other criminal cases, it is highly probable that he will face further convictions in 2024, especially considering the serious nature of the charges he is still contesting. Therefore, the likelihood of additional convictions in the year is substantial.",
+    "search_queries_used": [
+      "Will Donald Trump be convicted in a criminal trial in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_005",
+    "question": "Will the US Supreme Court uphold the TikTok ban?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.01,
+    "brier_score": 0.9801,
+    "log_loss": 4.605170185988091,
+    "reasoning": "The search results indicate that the US Supreme Court has upheld the TikTok ban, meaning that the court has ruled against TikTok's operation in the U.S. unless it is sold by its Chinese parent company. This suggests that the likelihood of the Supreme Court reversing this decision or ruling in favor of TikTok is extremely low, hence a probability of only 1% for the ban being overturned.",
+    "search_queries_used": [
+      "Will the US Supreme Court uphold the TikTok ban?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_006",
+    "question": "Will the Republicans win control of the US Senate in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.95,
+    "brier_score": 0.0025000000000000044,
+    "log_loss": 0.05129329438755058,
+    "reasoning": "The search results indicate that Republicans have successfully retaken control of the US Senate, gaining multiple seats in key states such as Ohio and West Virginia. This outcome aligns with projections made prior to the election, suggesting a strong likelihood of Republican control. Given the favorable electoral map for Republicans and the reported victories, the probability of them winning control of the Senate is very high.",
+    "search_queries_used": [
+      "Will the Republicans win control of the US Senate in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_007",
+    "question": "Will there be a US Supreme Court vacancy in 2024?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.65,
+    "brier_score": 0.42250000000000004,
+    "log_loss": 1.0498221244986778,
+    "reasoning": "Given that both Justice Clarence Thomas and Justice Samuel Alito will be 76 and 74 years old respectively by the end of the 2024 term, there is a reasonable chance that one or both may choose to retire or could face health issues that lead to a vacancy. Historically, justices have retired around this age, especially when they have served long tenures. The political climate and the upcoming presidential election may also influence their decisions, as justices often consider the implications of their retirement timing. Therefore, while there is uncertainty, the age and service length of these justices suggest a moderate probability of a vacancy occurring in 2024.",
+    "search_queries_used": [
+      "Will there be a US Supreme Court vacancy in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_008",
+    "question": "Will Sweden join NATO in 2024?",
+    "category": "geopolitics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.99,
+    "brier_score": 0.00010000000000000018,
+    "log_loss": 0.01005033585350145,
+    "reasoning": "The search results confirm that Sweden officially joined NATO on March 7, 2024. Given this information, the probability of Sweden joining NATO in 2024 is effectively 1, but since the requirement is to provide a probability between 0.01 and 0.99, I estimate it at 0.99 to reflect the certainty of the event while adhering to the constraints.",
+    "search_queries_used": [
+      "Will Sweden join NATO in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_009",
+    "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.25,
+    "brier_score": 0.0625,
+    "log_loss": 0.2876820724517809,
+    "reasoning": "While there are indications that both Russia and Ukraine may be under pressure to negotiate a ceasefire due to growing opposition to the war and potential shifts in the geopolitical landscape, the lack of concrete evidence that either side is willing to make significant concessions, particularly regarding territorial issues, suggests that a formal agreement by the end of 2024 remains unlikely. The prevailing sentiment indicates that while discussions may occur, a binding ceasefire agreement is not assured.",
+    "search_queries_used": [
+      "Will Russia and Ukraine agree to a ceasefire by end of 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_010",
+    "question": "Will China take military action against Taiwan in 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "single",
+    "predicted_probability": 0.35,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "While there are indications that China is preparing its military capabilities for a potential invasion of Taiwan, the consensus among analysts suggests that significant factors, such as military readiness and international response, will influence any decision to take military action. Reports indicate that senior military officials in China believe the military is not yet ready for a large-scale invasion, and the U.S. has been actively preparing to counter such actions. Additionally, the timeline for a potential invasion appears to be more focused on the years leading up to 2027 rather than 2024. Therefore, while the possibility exists, it is not deemed highly likely in the immediate future.",
+    "search_queries_used": [
+      "Will China take military action against Taiwan in 2024?"
+    ],
+    "num_results_used": 5
+  },
+  {
+    "question_id": "pm_001",
+    "question": "Will Donald Trump win the 2024 US presidential election?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.48,
+    "brier_score": 0.27040000000000003,
+    "log_loss": 0.7339691750802004,
+    "reasoning": "The race between Donald Trump and his opponents, particularly Joe Biden and Kamala Harris, is extremely close, with polls indicating a very narrow margin. Some polls show Trump slightly trailing or tied with Biden, while others suggest he has a slight edge in the Electoral College. Factors such as Trump's appeal among certain demographics and the importance of issues like the economy may favor him, but the overall uncertainty and the potential impact of undecided voters make it difficult to predict a clear victory. Given these dynamics, a probability of 48% reflects the competitive nature of the election.",
+    "search_queries_used": [
+      "Donald Trump 2024 presidential election polls October 2023",
+      "2024 US presidential election predictions analysis Trump Biden",
+      "factors influencing Donald Trump's chances 2024 election"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_002",
+    "question": "Will Joe Biden be the 2024 Democratic nominee?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.65,
+    "brier_score": 0.42250000000000004,
+    "log_loss": 1.0498221244986778,
+    "reasoning": "As of July 2024, Joe Biden is actively running for re-election and has secured significant support within the Democratic Party, as indicated by his clinching of the nomination in various primaries. However, there are signs of discontent among voters regarding his approval ratings and the presence of challengers, which could impact his nomination. Despite these challenges, the Democratic Party typically rallies around an incumbent president, especially one who has already secured a substantial lead in delegate counts. Therefore, while there are uncertainties, the likelihood of Biden being the nominee remains relatively high.",
+    "search_queries_used": [
+      "Joe Biden 2024 Democratic nominee news",
+      "2024 Democratic primary candidates polling results",
+      "Joe Biden approval ratings 2023 analysis"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_003",
+    "question": "Will Joe Biden pardon Hunter Biden?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.95,
+    "brier_score": 0.0025000000000000044,
+    "log_loss": 0.05129329438755058,
+    "reasoning": "The search results indicate that President Joe Biden has indeed pardoned his son Hunter Biden, despite previous statements where he claimed he would not do so. This reversal suggests a strong likelihood that the pardon has occurred, and the context provided in multiple sources confirms this outcome. Therefore, the probability of Joe Biden having pardoned Hunter Biden is very high.",
+    "search_queries_used": [
+      "Joe Biden Hunter Biden pardon news October 2023",
+      "Hunter Biden legal situation updates 2023",
+      "Joe Biden statements on pardoning family members 2023"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_004",
+    "question": "Will Donald Trump be convicted in a criminal trial in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.85,
+    "brier_score": 0.022500000000000006,
+    "log_loss": 0.16251892949777494,
+    "reasoning": "Donald Trump has been convicted on 34 felony counts related to falsifying business records, which indicates a significant legal finding against him. Given the historical context of this conviction, being the first former president to be found guilty of felony crimes, it suggests a strong likelihood of conviction in ongoing and future trials. Additionally, the legal landscape surrounding his appeals and potential sentencing will likely keep the conviction in the public and legal spotlight, further solidifying the probability of conviction in any subsequent criminal trials.",
+    "search_queries_used": [
+      "Donald Trump criminal trial 2024 conviction news",
+      "Donald Trump legal defense strategies 2024",
+      "public opinion on Donald Trump conviction 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_005",
+    "question": "Will the US Supreme Court uphold the TikTok ban?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.75,
+    "brier_score": 0.0625,
+    "log_loss": 0.2876820724517809,
+    "reasoning": "The Supreme Court has shown a tendency to prioritize national security concerns over free speech rights in recent rulings, particularly in cases involving foreign-owned applications like TikTok. The arguments presented during the hearings indicated a significant concern among justices regarding the potential risks posed by TikTok's Chinese ownership. Additionally, the Court's decision to hear the case and the framing of the law suggest that they may lean towards upholding the ban, especially given the government's strong emphasis on national security. However, there are also substantial arguments regarding free speech implications and skepticism from some justices, which could lead to a more nuanced ruling. Overall, while there is a strong likelihood of the ban being upheld, the presence of dissenting views and the complexity of the legal arguments suggest a probability of 75%.",
+    "search_queries_used": [
+      "US Supreme Court TikTok ban decision news 2023",
+      "legal arguments against TikTok ban Supreme Court 2023",
+      "public opinion TikTok ban Supreme Court ruling 2023"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_006",
+    "question": "Will the Republicans win control of the US Senate in 2024?",
+    "category": "politics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.76,
+    "brier_score": 0.0576,
+    "log_loss": 0.2744368457017603,
+    "reasoning": "The search results indicate a strong consensus among various sources that Republicans are projected to take control of the Senate in the 2024 elections. Predictions from multiple outlets suggest a high probability, with estimates around 76% to 78%. Additionally, the electoral map favors Republicans as they are expected to capitalize on the number of seats Democrats are defending. Given this information, a probability of 76% reflects a reasonable assessment of the likelihood of Republican control of the Senate.",
+    "search_queries_used": [
+      "2024 US Senate election Republican control predictions",
+      "2024 US Senate election polls Republican vs Democrat",
+      "historical trends Republican control US Senate elections"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_007",
+    "question": "Will there be a US Supreme Court vacancy in 2024?",
+    "category": "politics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.45,
+    "brier_score": 0.2025,
+    "log_loss": 0.5978370007556204,
+    "reasoning": "While there is no guaranteed Supreme Court vacancy, the ages of current justices like Clarence Thomas and Samuel Alito suggest a potential for retirement or vacancy. However, justices tend to remain in their positions until absolutely necessary to step down, as evidenced by historical patterns. Given the uncertainty surrounding health and personal decisions of the justices, along with the political implications of the upcoming presidential election, the probability of a vacancy occurring in 2024 is moderate but not high.",
+    "search_queries_used": [
+      "US Supreme Court vacancy predictions 2024",
+      "current justices health status Supreme Court 2024",
+      "historical trends Supreme Court vacancies 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_008",
+    "question": "Will Sweden join NATO in 2024?",
+    "category": "geopolitics",
+    "resolution": true,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.99,
+    "brier_score": 0.00010000000000000018,
+    "log_loss": 0.01005033585350145,
+    "reasoning": "As of March 7, 2024, Sweden has officially joined NATO, becoming its 32nd member. This confirms that Sweden's accession to NATO has occurred, making the probability of Sweden joining NATO in 2024 effectively certain.",
+    "search_queries_used": [
+      "Sweden NATO membership news 2024",
+      "Sweden NATO accession opposition 2024",
+      "Sweden NATO membership public opinion 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_009",
+    "question": "Will Russia and Ukraine agree to a ceasefire by end of 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.35,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "While there have been indications from Russia that they are open to negotiating a ceasefire, significant obstacles remain, particularly Ukraine's insistence on territorial integrity and the withdrawal of Russian troops. The ongoing military engagements and mutual accusations of violations suggest that a comprehensive ceasefire agreement is unlikely by the end of 2024. However, the possibility of limited agreements or temporary truces cannot be entirely ruled out, leading to a moderate probability of a ceasefire being reached.",
+    "search_queries_used": [
+      "Russia Ukraine ceasefire negotiations 2024 news",
+      "Russia Ukraine conflict ceasefire obstacles analysis 2023",
+      "international response Russia Ukraine ceasefire prospects 2024"
+    ],
+    "num_results_used": 15
+  },
+  {
+    "question_id": "pm_010",
+    "question": "Will China take military action against Taiwan in 2024?",
+    "category": "geopolitics",
+    "resolution": false,
+    "provider": "tavily",
+    "mode": "agentic",
+    "predicted_probability": 0.35,
+    "brier_score": 0.12249999999999998,
+    "log_loss": 0.4307829160924542,
+    "reasoning": "While there are significant tensions between China and Taiwan, and some predictions suggest a potential military action in 2024, there are also indications that China's military may not be fully prepared for a large-scale invasion. Analysts have pointed out that internal debates within China's leadership reflect uncertainty about the timing of any military action. Additionally, the U.S. commitment to Taiwan and the potential consequences of military action may deter China from taking such steps in 2024. Therefore, while the risk exists, it is moderated by these factors.",
+    "search_queries_used": [
+      "China Taiwan military action predictions 2024",
+      "recent tensions China Taiwan military conflict news 2023",
+      "expert analysis China Taiwan relations military strategy 2024"
+    ],
+    "num_results_used": 15
+  }
+]
